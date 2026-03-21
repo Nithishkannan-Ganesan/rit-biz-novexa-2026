@@ -1,0 +1,287 @@
+/* ================= PAGE ================= */
+.hackathon-page {
+  background: #02021a;
+  min-height: 100vh;
+}
+
+/* ================= CONTAINER ================= */
+.hackathon-container {
+  position: relative;
+  padding: 60px 10%;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* DARK OVERLAY */
+.hackathon-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 30, 0.75);
+  z-index: 1;
+}
+
+/* ================= CONTENT ================= */
+.hackathon-content {
+  position: relative;
+  z-index: 2;
+
+  max-width: 1100px;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  text-align: left;
+}
+
+/* ================= HEADER ROW ================= */
+.hackathon-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ================= TITLE ================= */
+.hackathon-title {
+  font-size: 42px;
+  font-family: 'Harry Potter', serif;
+
+  background: linear-gradient(#fff4b0, #d4af37, #8b6f00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ================= REGISTER BUTTON ================= */
+.register-btn {
+  padding: 8px 20px;
+  border-radius: 25px;
+
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1px;
+
+  text-decoration: none;
+  color: white;
+
+  border: 2px solid #5f6cff;
+  transition: 0.3s ease;
+}
+
+.register-btn:hover {
+  border: 2px solid #7b4dff;
+  box-shadow: 0 0 15px rgba(123, 77, 255, 0.7);
+  transform: scale(1.05);
+}
+
+/* ================= POSTER ================= */
+.hackathon-poster {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.hackathon-poster img {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+
+  border-radius: 15px;
+  object-fit: contain;
+
+  box-shadow: 0 0 25px rgba(212,175,55,0.3);
+  transition: transform 0.3s ease;
+}
+
+.hackathon-poster img:hover {
+  transform: scale(1.05);
+}
+
+/* ================= EVENT CARDS ================= */
+.event-card-box {
+  width: 100%;
+  padding: 20px;
+
+  background: rgba(10, 10, 40, 0.7);
+  border-radius: 12px;
+  border: 1px solid rgba(0, 255, 255, 0.3);
+
+  backdrop-filter: blur(10px);
+  color: #e6faff;
+
+  transition: 0.3s ease;
+}
+
+.event-card-box:hover {
+  transform: translateY(-5px);
+  box-shadow:
+    0 0 20px rgba(0,255,255,0.3),
+    0 0 40px rgba(90,79,255,0.2);
+}
+
+/* ================= ROW ================= */
+.event-row {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.event-card-box.half {
+  flex: 1;
+}
+
+.event-card-box.full {
+  width: 100%;
+}
+
+/* ================= PARTICLES ================= */
+.particles {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.particles span {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+
+  background: #4deaff;
+  border-radius: 50%;
+
+  opacity: 0.6;
+  animation: floatUp linear infinite;
+}
+
+/* RANDOM */
+.particles span:nth-child(1) { left: 10%; animation-duration: 10s; }
+.particles span:nth-child(2) { left: 20%; animation-duration: 12s; }
+.particles span:nth-child(3) { left: 30%; animation-duration: 8s; }
+.particles span:nth-child(4) { left: 40%; animation-duration: 14s; }
+.particles span:nth-child(5) { left: 50%; animation-duration: 9s; }
+.particles span:nth-child(6) { left: 60%; animation-duration: 11s; }
+.particles span:nth-child(7) { left: 70%; animation-duration: 13s; }
+.particles span:nth-child(8) { left: 80%; animation-duration: 7s; }
+.particles span:nth-child(9) { left: 90%; animation-duration: 12s; }
+
+/* ANIMATION */
+@keyframes floatUp {
+  from {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(-10vh);
+    opacity: 1;
+  }
+}
+
+/* ================= SIDEBAR ================= */
+.mobile-sidebar {
+  position: fixed;
+  top: 0;
+  left: -100%;
+
+  width: 75%;
+  height: 100%;
+
+  background: #02021a;
+  padding: 20px;
+
+  z-index: 1002;
+  transition: 0.4s ease;
+}
+
+.mobile-sidebar.open {
+  left: 0;
+}
+
+.sidebar-top {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.close-btn {
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
+}
+
+.sidebar-links {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebar-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.sidebar-links a:hover {
+  color: #d4af37;
+}
+
+/* OVERLAY */
+.overlay-blur {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 1000;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+  .hackathon-container {
+    padding: 30px 12px;
+  }
+
+  .hackathon-header-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .hackathon-title {
+    font-size: 26px;
+    line-height: 1.3;
+  }
+
+  .event-row {
+    flex-direction: column;
+  }
+
+  .nav-links.desktop {
+    display: none;
+  }
+
+  .navbar {
+    justify-content: center;
+    position: relative;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .metallic-text {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 769px) {
+  .hamburger {
+    display: none;
+  }
+}

@@ -1,0 +1,877 @@
+/* 🔥 GLOBAL FIX */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* 🌌 BACKGROUND */
+.hp-container {
+  background: #02021a;
+}
+
+/* 🔝 HEADER */
+.college-header {
+  display: grid;
+  grid-template-columns: 120px 1fr 120px;
+  align-items: center;
+  padding: 15px;
+
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+
+.header-left,
+.header-right {
+  display: flex;
+  justify-content: center;
+}
+
+.header-left img,
+.header-right img {
+  width: 70px;
+}
+
+.header-center {
+  text-align: center;
+}
+
+.header-center h1 {
+  font-size: 24px;
+  margin: 5px 0;
+}
+
+.header-center p {
+  font-size: 12px;
+  color: #ccc;
+  margin: 2px 0;
+}
+
+.header-center h2 {
+  font-size: 15px;
+  color: #d4af37;
+}
+
+/* 🧭 NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 12px 15px;
+  background: #010015;
+}
+
+/* 🔥 METALLIC TEXT (NO ANIMATION) */
+.metallic-text {
+  font-family: 'Harry Potter', serif;
+  font-size: 22px;
+
+  background: linear-gradient(#fff4b0, #d4af37, #8b6f00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* NAV LINKS */
+.nav-links a {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* underline animation */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+
+  width: 0%;
+  height: 2px;
+  background: #d4af37;
+
+  transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #d4af37;
+  transform: scale(1.08);
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* 🎬 HERO */
+.hero {
+  position: relative;
+  height: 85vh;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+}
+
+/* CONTENT */
+.hero-content {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 26px;
+}
+
+.hero-text {
+  font-size: 14px;
+  color: #ccc;
+  margin: 10px 0;
+}
+
+/* BUTTON */
+.hero-btn {
+  padding: 10px 24px;
+  border-radius: 25px;
+
+  font-size: 13px;
+  font-weight: bold;
+
+  background: linear-gradient(135deg, #5f6cff, #7b4dff);
+  color: white;
+  text-decoration: none;
+
+  box-shadow: 0 0 12px rgba(123, 77, 255, 0.6);
+}
+
+.hero-btn:hover {
+  background: transparent;
+  border: 2px solid #7b4dff;
+}
+
+/* ✨ PARTICLES (RESTORED) */
+.particles {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.particles span {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #7a6bff;
+
+  animation: float 10s linear infinite;
+}
+
+.particles span:nth-child(odd) {
+  background: #d4af37;
+}
+
+@keyframes float {
+  from {
+    transform: translateY(100vh);
+  }
+  to {
+    transform: translateY(-10vh);
+  }
+}
+
+/* 🧾 ABOUT */
+.about-wrapper {
+  padding: 40px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* FIX CARD WIDTH */
+.about-card {
+  width: 100%;
+  max-width: 90%;   /* 🔥 KEY FIX */
+
+  padding: 20px;
+  border-radius: 15px;
+
+  background: rgba(255,255,255,0.05);
+  border: 1px solid #1a1a3a;
+}
+
+/* TITLE */
+.about-title {
+  font-family: 'Harry Potter', serif;
+  font-size: 24px;
+
+  background: linear-gradient(#fff4b0, #d4af37, #8b6f00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-card p {
+  font-size: 14px;
+  color: #ddd;
+  line-height: 1.6;
+}
+
+/* HOUSES */
+.houses-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.house-image img {
+  width: 100%;
+  max-width: 300px;
+}
+
+/* 🔻 FOOTER */
+.footer-modern {
+  background: #02021a;
+  padding: 30px 15px;
+  text-align: center;
+}
+
+.footer-copy,
+.footer-design {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.footer-socials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-btn {
+  padding: 8px 15px;
+  border-radius: 20px;
+  border: 1px solid #00bfff;
+  font-size: 12px;
+  color: white;
+  text-decoration: none;
+}
+
+/* 📱 MOBILE IMPROVEMENTS */
+@media (max-width: 768px) {
+
+  .college-header {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .header-left,
+  .header-right {
+    display: none;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .nav-links {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .hero-title {
+    font-size: 22px;
+  }
+
+  .hero-text {
+    font-size: 13px;
+  }
+}
+
+/* HAMBURGER BUTTON */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+
+/* MOBILE MENU */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 70%;
+  height: 100vh;
+
+  background: #010015;
+  padding: 60px 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  transition: 0.3s;
+  z-index: 999;
+}
+
+.mobile-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* OPEN STATE */
+.mobile-menu.open {
+  left: 0;
+}
+
+/* 📱 MOBILE ONLY */
+@media (max-width: 768px) {
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links.desktop {
+    display: none;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 15px;
+  background: #010015;
+}
+
+/* LEFT SIDE */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* HAMBURGER */
+.hamburger {
+  display: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 15px;
+  background: #010015;
+}
+
+/* LEFT SIDE */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* HAMBURGER */
+.hamburger {
+  display: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: white;
+}
+
+@media (max-width: 768px) {
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links.desktop {
+    display: none;
+  }
+
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .metallic-text {
+    font-size: 18px;   /* 🔥 smaller title */
+  }
+}
+
+/* NAVBAR */
+.navbar {
+  position: relative;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #010015;
+}
+
+/* TITLE CENTER */
+.metallic-text {
+  font-family: 'Harry Potter', serif;
+  font-size: 20px;
+
+  background: linear-gradient(#fff4b0, #d4af37, #8b6f00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* HAMBURGER LEFT */
+.hamburger {
+  position: absolute;
+  left: 15px;
+  font-size: 22px;
+  color: white;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+/* DESKTOP LINKS */
+.nav-links.desktop {
+  position: absolute;
+  right: 20px;
+}
+
+@media (max-width: 768px) {
+  .nav-links.desktop {
+    display: none;
+  }
+}
+
+/* 🔥 SIDEBAR */
+.mobile-sidebar {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 75%;
+  height: 100%;
+
+  background: #02021a;
+  backdrop-filter: blur(20px);
+
+  padding: 20px;
+  z-index: 1002;
+
+  transition: 0.4s ease;
+}
+
+.mobile-sidebar.open {
+  left: 0;
+}
+
+/* TOP BAR */
+.sidebar-top {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* CLOSE BUTTON */
+.close-btn {
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
+}
+
+/* LINKS */
+.sidebar-links {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebar-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.sidebar-links a:hover {
+  color: #d4af37;
+}
+
+/* OVERLAY BLUR */
+.overlay-blur {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(5px);
+  z-index: 1000;
+}
+
+/* DEFAULT (MOBILE FIRST - keep centered) */
+.navbar {
+  position: relative;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #010015;
+}
+
+/* TITLE */
+.metallic-text {
+  font-family: 'Harry Potter', serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* HAMBURGER */
+.hamburger {
+  position: absolute;
+  left: 15px;
+}
+
+/* DESKTOP FIX */
+@media (min-width: 769px) {
+
+  .navbar {
+    justify-content: space-between;
+    padding: 0 40px;
+  }
+
+  /* ❌ REMOVE CENTER ALIGN */
+  .metallic-text {
+    position: static;
+    text-align: left;
+    font-size: 24px;
+  }
+
+  /* HIDE HAMBURGER ON DESKTOP */
+  .hamburger {
+    display: none;
+  }
+
+  /* SHOW NAV LINKS */
+  .nav-links.desktop {
+    display: flex;
+    gap: 25px;
+  }
+}
+
+/* DEFAULT (MOBILE FIRST - keep centered) */
+.navbar {
+  position: relative;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #010015;
+}
+
+/* TITLE */
+.metallic-text {
+  font-family: 'Harry Potter', serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* HAMBURGER */
+.hamburger {
+  position: absolute;
+  left: 15px;
+}
+
+/* DESKTOP FIX */
+@media (min-width: 769px) {
+
+  .navbar {
+    justify-content: space-between;
+    padding: 0 40px;
+  }
+
+  /* ❌ REMOVE CENTER ALIGN */
+  .metallic-text {
+    position: static;
+    text-align: left;
+    font-size: 24px;
+  }
+
+  /* HIDE HAMBURGER ON DESKTOP */
+  .hamburger {
+    display: none;
+  }
+
+  /* SHOW NAV LINKS */
+  .nav-links.desktop {
+    display: flex;
+    gap: 25px;
+  }
+}
+
+/* 📱 MOBILE HEADER FIX */
+@media (max-width: 768px) {
+
+  .college-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 12px 10px;   /* 🔥 reduce height */
+    text-align: center;
+  }
+
+  /* LOGO */
+  .header-left {
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  .header-left img {
+    width: 55px;   /* 🔥 smaller logo */
+    border-radius: 10px;
+  }
+
+  .header-right {
+    display: none;
+  }
+
+  /* MAIN TITLE */
+  .header-center h1 {
+    font-size: 16px;     /* 🔥 FIX big text */
+    letter-spacing: 1px;
+    line-height: 1.3;
+  }
+
+  /* SUB TEXT */
+  .header-center p {
+    font-size: 10px;
+    line-height: 1.4;
+    margin: 2px 0;
+  }
+
+  /* DEPARTMENT */
+  .header-center h2 {
+    font-size: 13px;
+    margin-top: 5px;
+  }
+
+}
+@media (max-width: 768px) {
+
+  .college-header {
+    display: flex;
+    flex-direction: row;        /* 🔥 CHANGE (row instead of column) */
+    align-items: center;
+    justify-content: flex-start;
+
+    padding: 10px;
+    gap: 10px;
+  }
+
+  /* LOGO LEFT */
+  .header-left {
+    display: block;
+    flex-shrink: 0;
+  }
+
+  .header-left img {
+    width: 50px;   /* 🔥 small clean logo */
+    border-radius: 10px;
+  }
+
+  /* TEXT RIGHT */
+  .header-center {
+    text-align: left;
+  }
+
+  .header-center h1 {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+
+  .header-center p {
+    font-size: 9px;
+    margin: 1px 0;
+  }
+
+  .header-center h2 {
+    font-size: 11px;
+  }
+
+  .header-right {
+    display: none;
+  }
+}
+
+/* ================= FINAL FIX (OVERRIDE ALL) ================= */
+
+/* 🔝 HEADER SIZE REDUCE */
+.college-header {
+  padding: 10px 12px !important;
+}
+
+/* 📱 MOBILE HEADER CLEAN */
+@media (max-width: 768px) {
+
+  .college-header {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+
+    gap: 10px;
+    padding: 8px 10px !important;
+  }
+
+  /* LOGO */
+  .header-left {
+    display: block !important;
+  }
+
+  .header-left img {
+    width: 45px !important;
+  }
+
+  /* TEXT */
+  .header-center {
+    text-align: center !important;
+  }
+
+  .header-center h1 {
+    font-size: 13px !important;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+
+  .header-center p {
+    font-size: 9px !important;
+    margin: 1px 0;
+  }
+
+  .header-center h2 {
+    font-size: 11px !important;
+  }
+
+  .header-right {
+    display: none !important;
+  }
+}
+
+/* 🔥 NAVBAR FIX */
+.navbar {
+  position: relative;
+  height: 55px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* TITLE FIX (KEEP FONT) */
+.metallic-text {
+  font-family: 'Harry Potter', serif !important;
+  font-size: 18px !important;
+}
+
+/* 🔥 HAMBURGER PERFECT POSITION */
+.hamburger {
+  position: absolute !important;
+  left: 12px !important;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+
+/* 📱 MOBILE NAV */
+@media (max-width: 768px) {
+
+  .nav-links.desktop {
+    display: none !important;
+  }
+
+  .navbar {
+    justify-content: center !important;
+  }
+}
+
+/* 📉 HERO HEIGHT REDUCE (IMPORTANT) */
+.hero {
+  height: 75vh !important;
+}
+
+.about-card {
+  width: 100%;
+  max-width: 90%;
+  padding: 20px;
+  border-radius: 15px;
+
+  background: rgba(255,255,255,0.05);
+  border: 1px solid #1a1a3a;
+
+  transition: all 0.4s ease;   /* 🔥 smooth animation */
+}
+
+/* ✨ HOVER EFFECT */
+.about-card:hover {
+  transform: translateY(-8px) scale(1.02);
+
+  border: 1px solid #4deaff;
+
+  box-shadow:
+    0 0 20px rgba(77,234,255,0.4),
+    0 0 40px rgba(90,79,255,0.3);
+}
+
+.house-image img {
+  width: 100%;
+  max-width: 300px;
+}
+
+.house-image img {
+  width: 100%;
+  max-width: 500px;   /* 🔥 increased size */
+  transition: transform 0.4s ease;
+}
+
+/* OPTIONAL: hover zoom */
+.house-image img:hover {
+  transform: scale(1.05);
+}
+
+.house-image img {
+  width: 100%;
+  max-width: 500px;   /* 🔥 increased size */
+  transition: transform 0.4s ease;
+}
+
+/* OPTIONAL: hover zoom */
+.house-image img:hover {
+  transform: scale(1.05);
+}
+/* ================= END ================= */

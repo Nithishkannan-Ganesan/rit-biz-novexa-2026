@@ -1,0 +1,195 @@
+/* ================= GLOBAL RESET ================= */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;   /* 🔥 prevents horizontal scroll */
+}
+
+/* ================= CONTAINER ================= */
+.intro-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;   /* ✅ safer than height */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  color: white;
+  overflow: hidden;
+
+  padding: 20px;
+}
+
+/* ================= OVERLAY ================= */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 20, 0.75);
+  z-index: 1;
+}
+
+/* ================= PARTICLES ================= */
+.particles {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;   /* 🔥 important */
+}
+
+.particles span {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+
+  border-radius: 50%;
+  background: #7a6bff;
+  opacity: 0.7;
+
+  animation: floatUp 10s linear infinite;
+}
+
+/* alternate color */
+.particles span:nth-child(odd) {
+  background: #d4af37;
+}
+
+/* animation */
+@keyframes floatUp {
+  from {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(-10vh);
+    opacity: 1;
+  }
+}
+
+/* ================= CONTENT ================= */
+.intro-content {
+  position: relative;
+  z-index: 2;
+
+  text-align: center;
+
+  width: 100%;
+  max-width: 800px;
+
+  animation: fadeUp 1.2s ease-in-out;
+}
+
+/* animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================= TITLE ================= */
+.intro-title {
+  font-family: 'Harry Potter', serif;
+
+  font-size: clamp(32px, 6vw, 60px);
+  line-height: 1.4;
+
+  background: linear-gradient(#fff4b0, #d4af37, #8b6f00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: glow 3s ease-in-out infinite alternate;
+}
+
+/* glow animation */
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #d4af37;
+  }
+  to {
+    text-shadow: 0 0 30px #d4af37;
+  }
+}
+
+/* ================= SUBTITLE ================= */
+.intro-subtitle {
+  margin: 15px 0 25px;
+
+  color: #ccc;
+  line-height: 1.6;
+
+  font-size: clamp(14px, 2.5vw, 18px);
+}
+
+/* ================= BUTTON ================= */
+.intro-btn {
+  display: inline-block;
+
+  padding: 12px 28px;
+  border-radius: 40px;
+
+  background: rgba(90, 79, 255, 0.15);
+  border: 1px solid rgba(122, 107, 255, 0.5);
+
+  color: white;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-decoration: none;
+
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+/* hover */
+.intro-btn:hover {
+  transform: scale(1.08);
+
+  border: 1px solid #d4af37;
+
+  box-shadow:
+    0 0 15px rgba(212, 175, 55, 0.6),
+    0 0 40px rgba(122, 107, 255, 0.5);
+
+  background: rgba(90, 79, 255, 0.25);
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+  .intro-container {
+    padding: 15px;
+  }
+
+  .intro-title {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+
+  .intro-subtitle {
+    font-size: 13px;
+  }
+
+  .intro-btn {
+    width: 100%;
+    max-width: 260px;
+  }
+
+  .particles span {
+    width: 3px;
+    height: 3px;
+  }
+}
