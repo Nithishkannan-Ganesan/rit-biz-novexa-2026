@@ -172,20 +172,16 @@ export default function Events() {
 
         <div className="footer-socials">
 
-          <a href="/" className="social-btn">
-            🔵 CSBS Department
+          <a href="https://www.instagram.com/ritcsbs?igsh=MThsYWpzN2JndHNtZw==" className="social-btn">
+            <b> CSBS Instagram</b>
           </a>
 
-          <a href="/" className="social-btn">
-            🌐 ritcsbs.in
+          <a href="https://www.linkedin.com/posts/rit-csbs-212949257_with-the-advent-of-welcomingfreshers-to-activity-6999695434801655809-vrEU?utm_source=share&utm_medium=member_desktop" className="social-btn">
+             <b> CSBS LinkedIn </b>
           </a>
 
-          <a href="/" className="social-btn">
-            💼 CSBS LinkedIn
-          </a>
-
-          <a href="/" className="social-btn">
-            ▶ CSBS YouTube
+          <a href="https://www.facebook.com/profile.php?id=100087866146448" className="social-btn">
+             <b> CSBS Facebook </b>
           </a>
 
         </div>

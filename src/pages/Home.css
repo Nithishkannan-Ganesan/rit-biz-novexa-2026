@@ -874,4 +874,8 @@ html, body {
 .house-image img:hover {
   transform: scale(1.05);
 }
+
+b{
+  color: #b7ff00;
+}
 /* ================= END ================= */

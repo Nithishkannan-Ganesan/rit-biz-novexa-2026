@@ -14,7 +14,7 @@ const eventData = {
     location: "Mechanical Seminar Hall",
     about:
       "Stranger Minds is a thrilling on-the-spot technical paper presentation event where participants step into the unknown.",
-    teamSize: "2 members",
+    teamSize: "2 - 3 members",
     coordinators: ["Ramya K, Nithish Kannan G"],
     faculty: "M Rama Krishnan",
     prize: ["₹1000 Cash Prize + Certificate", "₹500 Cash Prize + Certificate"]
@@ -38,37 +38,125 @@ const eventData = {
         desc: "Real-world problem solving using VS Code."
       }
     ],
-    teamSize: "2 members",
+    teamSize: "2 - 3 members",
     coordinators: ["Santhosh G, SivaPriya"],
     faculty: "M Jeya Sundari",
     prize: ["₹1000 Cash Prize + Certificate", "₹500 Cash Prize + Certificate"]
   },
   web: {
-    title: "Slytherin WebForge (Web Design)",
-    time: "11:00 AM - 1:00 PM",
-    location: "Data Analytics Lab",
-    about: "",
-    teamSize: "2 members",
-    coordinators: [
-      "Thanalakshmi G, Kishore T",
-      
-    ],
-    faculty: "M Shabana Fathima",
-    prize: ["₹1000 Cash Prize + Certificate", "₹500 Cash Prize + Certificate"]
+  title: "Slytherin WebForge (Web Design)",
+  time: "11:00 AM - 1:00 PM",
+  location: "Data Analytics Lab",
+
+  about: [
+    {
+      title: "About the Event",
+      desc: "Frontend Frenzy is a dynamic web design competition where participants build visually stunning and responsive web interfaces using modern frontend technologies with the support of AI tools.",
+      points: [
+        "Focus on UI/UX design and creativity",
+        "Use of AI tools like ChatGPT allowed",
+        "Emphasis on smart problem-solving",
+        "Deliver a complete frontend solution within limited time"
+      ]
+    },
+    {
+      title: "Event Challenge",
+      desc: "Participants will design a real-world frontend solution based on a given problem statement.",
+      points: [
+        "1 Hour development time",
+        "Real-world application problem",
+        "Fully working frontend prototype",
+        "No backend required"
+      ]
+    },
+    {
+      title: "Technologies Allowed",
+      desc: "Participants can use any modern frontend stack.",
+      points: [
+        "HTML, CSS, JavaScript",
+        "React, Angular, Vue",
+        "Bootstrap, Tailwind",
+        "AI tools like ChatGPT, Copilot"
+      ]
+    },
+    {
+      title: "Rules & Guidelines",
+      desc: "Participants must follow fair usage and explain their work.",
+      points: [
+        "No pre-built templates",
+        "AI usage allowed (must understand code)",
+        "Must explain design and implementation",
+        "No plagiarism between teams",
+        "Judges decision is final"
+      ]
+    },
+    {
+      title: "Judging Criteria",
+      desc: "Evaluation is based on multiple performance factors.",
+      points: [
+        "UI/UX & Design Quality",
+        "Responsiveness",
+        "Creativity & Problem Solving",
+        "Efficient use of AI tools",
+        "Understanding & explanation",
+        "Time management"
+      ]
+    },
+    {
+      title: "Event Workflow",
+      desc: "Step-by-step process followed during the competition.",
+      points: [
+        "Registration & Setup",
+        "Instructions & Rules",
+        "Problem Statement Release",
+        "Development Phase",
+        "Mid-Twist Feature Addition",
+        "Submission",
+        "Evaluation & Judging",
+        "Results & Awards"
+      ]
+    }
+  ],
+
+  teamSize: "Individual / Team of 2",
+  coordinators: ["Thanalakshmi G, Pradeep K"],
+  faculty: "M Shabana Fathima",
+  prize: ["₹1000 Cash Prize + Certificate", "₹500 Cash Prize + Certificate"]
   },
 
   ctf: {
-    title: "Heist Protocol (CTF Challenge)",
-    time: "11:00 AM - 1:00 PM",
-    location: "OOPA Lab",
-    about: "",
-    teamSize: "2 members",
-    coordinators: [
-      "Jason Ezra, Kaviya N",
-      
-    ],
-    faculty: "M Preethi Ram",
-    prize: ["₹1000 Cash Prize + Certificate", "₹500 Cash Prize + Certificate"]
+  title: "Heist Protocol (CTF Challenge)",
+  time: "11:00 AM - 1:00 PM",
+  location: "OOPA Lab",
+
+  about: [
+    {
+      title: "Round 1 (Beginner CTF)",
+      desc: "Basic problem-solving challenges to identify hidden flags.",
+      points: [
+        "Easy Cryptography (Caesar Cipher, Base64)",
+        "Web Basics (view page source, hidden HTML content)",
+        "Logic and puzzle-based questions",
+        "Beginner-friendly and open to all participants",
+        "Shortlisting based on number of correct flags"
+      ]
+    },
+    {
+      title: "Round 2 (Intermediate CTF)",
+      desc: "Moderately challenging tasks involving data analysis.",
+      points: [
+        "Image-based challenges (basic steganography)",
+        "File-based challenges (hidden data in text/PDF files)",
+        "QR/clue-based challenges",
+        "Final evaluation based on total flags captured"
+      ]
+    }
+  ],
+
+  teamSize: "2 - 3 members",
+  coordinators: ["Jason Ezra, Kaviya N"],
+  faculty: "M Preethi Ram",
+  prize: ["₹1000 Cash Prize + Certificate", "₹500 Cash Prize + Certificate"]
   },
 
   esports: {
@@ -90,7 +178,7 @@ const eventData = {
     time: "2:00 PM - 3:00 PM",
     location: "Mechanical Seminar Hall",
     about: "",
-    teamSize: "2 members",
+    teamSize: "2 - 3 members",
     coordinators: [
       "Vaishnavi V, Jason Ezra",
       
@@ -117,7 +205,7 @@ const eventData = {
     time: "2:00 PM - 3:00 PM",
     location: "Business Analytics Lab",
     about: "",
-    teamSize: "2 members",
+    teamSize: "2 - 3 members",
     coordinators: [
       "Kaavyadharshini, Bala Vignesh S",
       
@@ -257,10 +345,10 @@ export default function EventDetail() {
               <h2>Coordinators</h2>
 
               {event.coordinators?.map((c, i) => (
-                <p key={i}>{c}</p>
+                <p key={i}><b>Students : </b>{c}</p>
               ))}
 
-              <p><b>Faculty :</b> {event.faculty}</p>
+              <p><b>Faculty : </b> {event.faculty}</p>
             </div>
 
           </div>
@@ -281,20 +369,16 @@ export default function EventDetail() {
 
         <div className="footer-socials">
 
-          <a href="/" className="social-btn">
-            🔵 CSBS Department
+          <a href="https://www.instagram.com/ritcsbs?igsh=MThsYWpzN2JndHNtZw==" className="social-btn">
+            <b> CSBS Instagram</b>
           </a>
 
-          <a href="/" className="social-btn">
-            🌐 ritcsbs.in
+          <a href="https://www.linkedin.com/posts/rit-csbs-212949257_with-the-advent-of-welcomingfreshers-to-activity-6999695434801655809-vrEU?utm_source=share&utm_medium=member_desktop" className="social-btn">
+             <b> CSBS LinkedIn </b>
           </a>
 
-          <a href="/" className="social-btn">
-            💼 CSBS LinkedIn
-          </a>
-
-          <a href="/" className="social-btn">
-            ▶ CSBS YouTube
+          <a href="https://www.facebook.com/profile.php?id=100087866146448" className="social-btn">
+             <b> CSBS Facebook </b>
           </a>
 
         </div>

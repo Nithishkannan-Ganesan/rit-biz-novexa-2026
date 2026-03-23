@@ -102,13 +102,13 @@ export default function Contact() {
             </div>
 
             <div className="contact-card">
-              <h3>Coordinator 3</h3>
-              <a href="tel:+91">+91</a>
+              <h3>Suchithra </h3>
+              <a href="tel:+916380196684">+91 6380196684</a>
             </div>
 
             <div className="contact-card">
-              <h3>Coordinator 4</h3>
-              <a href="tel:+91">+91</a>
+              <h3>Vaishnavi</h3>
+              <a href="tel:+918056465490">+91 8056465490</a>
             </div>
 
           </div>
@@ -143,20 +143,17 @@ export default function Contact() {
 
         <div className="footer-socials">
 
-          <a href="/" className="social-btn">
-            🔵 CSBS Department
+
+          <a href="https://www.instagram.com/ritcsbs?igsh=MThsYWpzN2JndHNtZw==" className="social-btn">
+            <b> CSBS Instagram</b>
           </a>
 
-          <a href="/" className="social-btn">
-            🌐 ritcsbs.in
+          <a href="https://www.linkedin.com/posts/rit-csbs-212949257_with-the-advent-of-welcomingfreshers-to-activity-6999695434801655809-vrEU?utm_source=share&utm_medium=member_desktop" className="social-btn">
+             <b> CSBS LinkedIn </b>
           </a>
 
-          <a href="/" className="social-btn">
-            💼 CSBS LinkedIn
-          </a>
-
-          <a href="/" className="social-btn">
-            ▶ CSBS YouTube
+          <a href="https://www.facebook.com/profile.php?id=100087866146448" className="social-btn">
+             <b> CSBS Facebook </b>
           </a>
 
         </div>
