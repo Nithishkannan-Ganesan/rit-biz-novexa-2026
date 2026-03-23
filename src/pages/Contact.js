@@ -92,22 +92,22 @@ export default function Contact() {
           <div className="contact-cards">
 
             <div className="contact-card">
-              <h3>YASHWIN</h3>
+              <h3>YASHWIN v</h3>
               <a href="tel:+918248818119">+91 8248818119</a>
             </div>
 
             <div className="contact-card">
-              <h3>ASHINSHREE</h3>
-              <a href="tel:+918220315775">+91 8220315775</a>
+              <h3>GOWTHAM P</h3>
+              <a href="tel:+917845491973">+91 7845491973</a>
             </div>
 
             <div className="contact-card">
-              <h3>Suchithra </h3>
+              <h3>SUCHITHRA S</h3>
               <a href="tel:+916380196684">+91 6380196684</a>
             </div>
 
             <div className="contact-card">
-              <h3>Vaishnavi</h3>
+              <h3>VAISHNAVI </h3>
               <a href="tel:+918056465490">+91 8056465490</a>
             </div>
 

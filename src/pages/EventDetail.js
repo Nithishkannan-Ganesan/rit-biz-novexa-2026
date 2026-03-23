@@ -30,8 +30,8 @@ const eventData = {
         desc: "Time-bound MCQs based on speed and accuracy."
       },
       {
-        title: "Round 2 (Debugging/Coding)",
-        desc: "Solve coding/debugging problems in chosen language."
+        title: "Round 2 (Debugging)",
+        desc: "Debug the given code using the choosen programming language."
       },
       {
         title: "Round 3 (Scenario-Based Coding)",
@@ -50,7 +50,7 @@ const eventData = {
 
   about: [
     {
-      title: "About the Event",
+      title: "Round 1",
       desc: "Frontend Frenzy is a dynamic web design competition where participants build visually stunning and responsive web interfaces using modern frontend technologies with the support of AI tools.",
       points: [
         "Focus on UI/UX design and creativity",
@@ -60,8 +60,8 @@ const eventData = {
       ]
     },
     {
-      title: "Event Challenge",
-      desc: "Participants will design a real-world frontend solution based on a given problem statement.",
+      title: "Round 2",
+      desc: "Participants will design a real-world frontend solution based on a given problem statement within an hour(No backend required).",
       points: [
         "1 Hour development time",
         "Real-world application problem",
@@ -71,55 +71,18 @@ const eventData = {
     },
     {
       title: "Technologies Allowed",
-      desc: "Participants can use any modern frontend stack.",
-      points: [
-        "HTML, CSS, JavaScript",
-        "React, Angular, Vue",
-        "Bootstrap, Tailwind",
-        "AI tools like ChatGPT, Copilot"
-      ]
-    },
-    {
-      title: "Rules & Guidelines",
-      desc: "Participants must follow fair usage and explain their work.",
-      points: [
-        "No pre-built templates",
-        "AI usage allowed (must understand code)",
-        "Must explain design and implementation",
-        "No plagiarism between teams",
-        "Judges decision is final"
-      ]
+      desc: "Participants can use any modern frontend stack such as HTML, CSS, JavaScript, React, Angular, Vue, Bootstrap, Tailwind,AI tools like ChatGPT, Copilot.",
+      
     },
     {
       title: "Judging Criteria",
-      desc: "Evaluation is based on multiple performance factors.",
-      points: [
-        "UI/UX & Design Quality",
-        "Responsiveness",
-        "Creativity & Problem Solving",
-        "Efficient use of AI tools",
-        "Understanding & explanation",
-        "Time management"
-      ]
-    },
-    {
-      title: "Event Workflow",
-      desc: "Step-by-step process followed during the competition.",
-      points: [
-        "Registration & Setup",
-        "Instructions & Rules",
-        "Problem Statement Release",
-        "Development Phase",
-        "Mid-Twist Feature Addition",
-        "Submission",
-        "Evaluation & Judging",
-        "Results & Awards"
-      ]
+      desc: "Evaluation is based on multiple performance factors such as UI/UX & Design Quality, Responsiveness, Efficient use of AI tools, Understanding & explanation and Time management.",
+      
     }
   ],
 
   teamSize: "Individual / Team of 2",
-  coordinators: ["Thanalakshmi G, Pradeep K"],
+  coordinators: ["Thanalakshmi G, Kishore T"],
   faculty: "M Shabana Fathima",
   prize: ["₹1000 Cash Prize + Certificate", "₹500 Cash Prize + Certificate"]
   },
@@ -188,17 +151,32 @@ const eventData = {
   },
 
   auction: {
-    title: "Wizarding Premier Auction (IPL Auction)",
-    time: "2:00 PM - 3:00 PM",
-    location: "Data Analytics Lab",
-    about: "",
-    teamSize: "Individual",
-    coordinators: [
-      "Raja Pandiyan, Mufrin Ashika O J",
-    ],
-    faculty: "M Jeya Sundari",
-    prize: ["₹1000 Cash Prize + Certificate", "₹500 Cash Prize + Certificate"]
-  },
+  title: "Wizarding Premier Auction (IPL Auction)",
+  time: "2:00 PM - 3:00 PM",
+  location: "Data Analytics Lab",
+  about: [
+    {
+      title: "Pre-Event Responsibilities",
+      desc: `• Prepare player list with categories and base prices and Design clear rules and guidelines
+• Arrange random shuffle method for team formation and Assign IPL team names randomly to each group
+• Fix budget limits for each team and Arrange materials (player sheets, bid cards, scoreboard)
+• Brief participants about event flow and rules`
+    },
+    {
+      title: "During the Event",
+      desc: `• Act as an auction host or assist the auctioneer and Conduct smooth bidding process
+• Ensure teams follow their assigned franchises and Monitor budget usage and player selection
+• Update the scoreboard after each bid and Maintain discipline and fairness and Resolve conflicts or confusion instantly
+• Keep the event engaging and time-bound`
+    }
+  ],
+  teamSize: "2 - 3 members",
+  coordinators: [
+    "Raja Pandiyan, Mufrin Ashika O J",
+  ],
+  faculty: "M Jeya Sundari",
+  prize: ["₹1000 Cash Prize + Certificate", "₹500 Cash Prize + Certificate"]
+},
 
   quiz: {
     title: "Wizard's Quiz Bowl",
@@ -305,7 +283,7 @@ export default function EventDetail() {
               event.about.map((item, i) => (
                 <div key={i} className="round-box">
                   <h3>{item.title}</h3>
-                  <p>{item.desc}</p>
+                  <p style={{ whiteSpace: "pre-line" }}>{item.desc}</p>
                 </div>
               ))
             ) : event.about ? (
