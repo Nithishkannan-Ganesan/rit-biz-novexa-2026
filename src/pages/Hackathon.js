@@ -11,6 +11,7 @@ export default function Hackathon() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
+    <div className="hp-container fade-in">
     <div className="hackathon-page">
 
       {/* HEADER */}
@@ -136,6 +137,7 @@ export default function Hackathon() {
               <h2>Prize Pool</h2>
               <p><b>1st :</b> ₹1000 Cash Prize + Certificate</p>
               <p><b>2nd :</b> ₹500 Cash Prize + Certificate</p>
+              <p><b>Others :</b> Participation Certificate(Hard copy)</p>
             </div>
 
           </div>
@@ -187,6 +189,7 @@ export default function Hackathon() {
 
       </footer>
 
+    </div>
     </div>
   );
 }

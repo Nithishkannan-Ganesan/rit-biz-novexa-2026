@@ -125,9 +125,22 @@ export default function Home() {
           </h1>
 
           <p className="hero-text">
-            Welcome to the World of Wizards. Enter the magical realm of
-            technology, creativity, and innovation.
-          </p>
+  Welcome to the <span className="highlight">World of Wizards</span>.
+  Step into a magical realm where technology, creativity, 
+  and innovation come alive.
+  
+  <br /><br />
+
+  <span className="deadline">
+    Date of Wizarding Symposium : <b>10th April 2026</b>
+  </span>
+  
+  <br />
+
+  <span className="deadline">
+     Last Date to recieve Invitation : <b>Coming Soon</b>
+  </span>
+</p>
 
           <a 
             href={poster}

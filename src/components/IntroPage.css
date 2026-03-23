@@ -193,3 +193,194 @@ html, body {
     height: 3px;
   }
 }
+
+/* 🔥 COUNTDOWN */
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 25px 0;
+  flex-wrap: wrap;
+}
+
+/* 🔥 TIMER BOX */
+.time-box {
+  width: 110px;
+  height: 110px;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(123, 77, 255, 0.3);
+
+  backdrop-filter: blur(12px);
+
+  box-shadow:
+    0 0 15px rgba(123, 77, 255, 0.3),
+    inset 0 0 10px rgba(255,255,255,0.05);
+
+  transition: 0.3s ease;
+}
+
+/* ✨ HOVER */
+.time-box:hover {
+  transform: translateY(-6px) scale(1.05);
+  box-shadow:
+    0 0 25px rgba(123, 77, 255, 0.6),
+    0 0 40px rgba(212,175,55,0.4);
+}
+
+/* 🔢 NUMBER */
+.time-box h2 {
+  font-size: 30px;
+  margin: 0;
+
+  background: linear-gradient(#fff4b0, #d4af37);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* 📝 LABEL */
+.time-box span {
+  font-size: 12px;
+  color: #aaa;
+  margin-top: 5px;
+  letter-spacing: 1px;
+}
+
+/* 📱 MOBILE */
+@media (max-width: 768px) {
+
+  .countdown {
+    gap: 12px;
+  }
+
+  .time-box {
+    width: 80px;
+    height: 80px;
+  }
+
+  .time-box h2 {
+    font-size: 20px;
+  }
+
+  .time-box span {
+    font-size: 10px;
+  }
+}
+
+.magic-portal {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle, rgba(2,2,26,0.95), black);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 9999;
+  overflow: hidden;
+}
+
+/* 🔥 CENTER CORE */
+.core {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+
+  border-radius: 50%;
+
+  background: radial-gradient(circle, #ffd700, #d4af37, transparent);
+
+  box-shadow:
+    0 0 60px #d4af37,
+    0 0 120px rgba(212,175,55,0.6),
+    0 0 200px rgba(123,77,255,0.4); /* purple aura */
+
+  animation: pulse 1s infinite alternate;
+}
+
+/* ✨ PARTICLES */
+.magic-portal span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 3px;
+  height: 3px;
+
+  border-radius: 50%;
+
+  background: #d4af37;
+
+  box-shadow:
+    0 0 6px #d4af37,
+    0 0 12px #ffd700,
+    0 0 25px #fff4b0;
+
+  animation: spiral 2.8s linear forwards;
+  animation-delay: calc(var(--i) * 0.002s);
+}
+
+/* 🌟 MIXED COLORS FOR MAGIC LOOK */
+.magic-portal span:nth-child(3n) {
+  background: #fff4b0;
+}
+
+.magic-portal span:nth-child(5n) {
+  background: #7b4dff;
+  box-shadow:
+    0 0 8px #7b4dff,
+    0 0 18px #7b4dff;
+}
+
+/* ✨ TRAIL EFFECT */
+.magic-portal span::after {
+  content: "";
+  position: absolute;
+
+  width: 2px;
+  height: 25px;
+
+  background: linear-gradient(to bottom, #d4af37, transparent);
+
+  transform: rotate(45deg);
+  opacity: 0.8;
+}
+
+/* 🌪️ SPIRAL MOTION */
+@keyframes spiral {
+  0% {
+    transform:
+      rotate(calc(var(--i) * 4deg + var(--arm) * 72deg))
+      translate(0px)
+      scale(0.4);
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  100% {
+    transform:
+      rotate(calc(var(--i) * 4deg + var(--arm) * 72deg + 1440deg))
+      translate(calc(1100px + var(--rand) * 400px))
+      scale(1.8);
+    opacity: 0;
+  }
+}
+
+/* 🔥 CORE PULSE */
+@keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.3);
+  }
+}

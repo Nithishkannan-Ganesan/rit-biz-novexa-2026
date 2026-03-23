@@ -10,6 +10,7 @@ export default function Contact() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
+    <div className="hp-container fade-in">
     <div className="contact-page">
 
       {/* HEADER */}
@@ -92,7 +93,7 @@ export default function Contact() {
           <div className="contact-cards">
 
             <div className="contact-card">
-              <h3>YASHWIN v</h3>
+              <h3>YASHWIN V</h3>
               <a href="tel:+918248818119">+91 8248818119</a>
             </div>
 
@@ -107,7 +108,7 @@ export default function Contact() {
             </div>
 
             <div className="contact-card">
-              <h3>VAISHNAVI </h3>
+              <h3>VAISHNAVI V</h3>
               <a href="tel:+918056465490">+91 8056465490</a>
             </div>
 
@@ -160,6 +161,7 @@ export default function Contact() {
 
       </footer>
 
+    </div>
     </div>
   );
 }

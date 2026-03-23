@@ -312,3 +312,16 @@
 b{
   color: #b7ff00;
 }
+
+.fade-in {
+  animation: pageFade 1s ease;
+}
+
+@keyframes pageFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

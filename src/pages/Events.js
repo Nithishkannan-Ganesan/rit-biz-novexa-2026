@@ -20,6 +20,7 @@ export default function Events() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
+    <div className="hp-container fade-in">
     <div className="events-page">
 
       {/* HEADER */}
@@ -188,6 +189,7 @@ export default function Events() {
 
       </footer>
 
+    </div>
     </div>
   );
 }

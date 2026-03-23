@@ -290,3 +290,60 @@ b{
   color: #b7ff00;
 }
 
+.fade-in {
+  animation: pageFade 1s ease;
+}
+
+@keyframes pageFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* MAIN CONTAINER FIX */
+.hackathon-content {
+  max-width: 1100px;   /* 🔥 controls width */
+  margin: 0 auto;      /* 🔥 centers everything */
+  padding: 20px;       /* 🔥 side spacing */
+}
+
+/* POSTER CENTER FIX */
+.hackathon-poster {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.hackathon-poster img {
+  max-width: 100%;
+  width: 700px;        /* 🔥 fixed clean width */
+  border-radius: 15px;
+}
+
+/* ABOUT BOX FIX */
+.event-card-box.full {
+  width: 100%;
+  max-width: 1000px;   /* 🔥 prevent stretching */
+  margin: 20px auto;   /* 🔥 center */
+}
+
+/* ROW FIX */
+.event-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+
+  max-width: 1000px;
+  margin: 20px auto;   /* 🔥 center rows */
+}
+
+/* HALF BOX */
+.event-card-box.half {
+  flex: 1;
+  min-width: 280px;
+  max-width: 480px;
+}

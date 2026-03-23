@@ -878,4 +878,78 @@ html, body {
 b{
   color: #b7ff00;
 }
+
+/* ✨ HERO TEXT IMPROVEMENT */
+.hero-text {
+  font-size: 15px;
+  color: #e6e6e6;
+  line-height: 1.8;
+
+  max-width: 600px;
+  margin: 15px auto 25px; /* 🔥 space below para */
+
+  text-align: center;
+
+  animation: fadeUp 1.2s ease forwards;
+  opacity: 0;
+}
+
+/* GOLD HIGHLIGHT */
+.highlight {
+  color: #d4af37;
+  font-weight: bold;
+}
+
+/* DATE STYLING */
+.event-date {
+  color: #7b4dff;
+  font-size: 14px;
+}
+
+/* DEADLINE */
+.deadline {
+  color: #00e6ff;
+  font-size: 14px;
+}
+
+/* BUTTON SPACING */
+.hero-btn {
+  margin-top: 15px; /* 🔥 space between text & button */
+
+  animation: fadeUp 1.6s ease forwards;
+  opacity: 0;
+}
+
+/* TITLE ANIMATION */
+.hero-title {
+  animation: fadeUp 0.8s ease forwards;
+  opacity: 0;
+  color: #00e6ff;
+}
+
+/* 🔥 FADE + SLIDE */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* PAGE FADE-IN */
+.fade-in {
+  animation: pageFade 1s ease;
+}
+
+@keyframes pageFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 /* ================= END ================= */

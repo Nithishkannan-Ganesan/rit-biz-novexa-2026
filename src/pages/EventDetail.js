@@ -17,7 +17,7 @@ const eventData = {
     teamSize: "2 - 3 members",
     coordinators: ["Ramya K, Nithish Kannan G"],
     faculty: "M Rama Krishnan",
-    prize: ["₹1000 Cash Prize + Certificate", "₹500 Cash Prize + Certificate"]
+    prize: ["Shield(Team) + Certificate", "Shield(Team) + Certificate", "Participation certificates"]
   },
 
   coding: {
@@ -41,7 +41,7 @@ const eventData = {
     teamSize: "2 - 3 members",
     coordinators: ["Santhosh G, SivaPriya"],
     faculty: "M Jeya Sundari",
-    prize: ["₹1000 Cash Prize + Certificate", "₹500 Cash Prize + Certificate"]
+    prize: ["₹1000 Cash Prize + Certificate", "₹500 Cash Prize + Certificate", "Participation Certificates"]
   },
   web: {
   title: "Slytherin WebForge (Web Design)",
@@ -82,9 +82,9 @@ const eventData = {
   ],
 
   teamSize: "Individual / Team of 2",
-  coordinators: ["Thanalakshmi G, Kishore T"],
+  coordinators: ["Thanalakshmi G, Pradeep K"],
   faculty: "M Shabana Fathima",
-  prize: ["₹1000 Cash Prize + Certificate", "₹500 Cash Prize + Certificate"]
+  prize: ["Shield(Team) + Certificate", "Shield(Team) + Certificate", "Participation certificates"]
   },
 
   ctf: {
@@ -119,7 +119,7 @@ const eventData = {
   teamSize: "2 - 3 members",
   coordinators: ["Jason Ezra, Kaviya N"],
   faculty: "M Preethi Ram",
-  prize: ["₹1000 Cash Prize + Certificate", "₹500 Cash Prize + Certificate"]
+  prize: ["Shield(Team) + Certificate", "Shield(Team) + Certificate", "Participation certificates"]
   },
 
   esports: {
@@ -149,7 +149,7 @@ const eventData = {
       
     ],
     faculty: "Ereena Veerappa Dinesh",
-    prize: ["₹1000 Cash Prize + Certificate", "₹500 Cash Prize + Certificate"]
+    prize: ["₹2500 Cash Prize + Certificate", "₹1500 Cash Prize + Certificate", "Participation Certificate(Hard copy for 3 - 6 rankings and E-certificate for other participants"]
   },
 
   debate: {
@@ -190,7 +190,7 @@ const eventData = {
     "Vaishnavi V, Jason Ezra",
   ],
   faculty: "M Preethi Ram",
-  prize: ["₹1000 Cash Prize + Certificate", "₹500 Cash Prize + Certificate"]
+  prize: ["Shield(Team) + Certificate", "Shield(Team) + Certificate", "Participation certificates"]
 },
 
   auction: {
@@ -215,10 +215,10 @@ const eventData = {
   ],
   teamSize: "2 - 3 members",
   coordinators: [
-    "Raja Pandiyan, Mufrin Ashika O J",
+    "Raja Pandiyan P, Mufrin Ashika O J",
   ],
   faculty: "M Jeya Sundari",
-  prize: ["₹1000 Cash Prize + Certificate", "₹500 Cash Prize + Certificate"]
+  prize: ["Shield(Team) + Certificate", "Shield(Team) + Certificate", "Participation certificates"]
 },
 
   quiz: {
@@ -253,7 +253,7 @@ const eventData = {
     "Kaavyadharshini, Bala Vignesh S",
   ],
   faculty: "M Rekha",
-  prize: ["₹1000 Cash Prize + Certificate", "₹500 Cash Prize + Certificate"]
+  prize: ["Shield(Team) + Certificate", "Shield(Team) + Certificate", "Participation certificates"]
 }
 };
 
@@ -272,6 +272,7 @@ export default function EventDetail() {
   }
 
   return (
+    <div className="hp-container fade-in">
     <div className="event-detail-page">
 
       {/* HEADER */}
@@ -371,6 +372,7 @@ export default function EventDetail() {
               <h2>Prize Pool</h2>
               <p><b>1st :</b> {event.prize?.[0]}</p>
               <p><b>2nd :</b> {event.prize?.[1]}</p>
+              <p><b>Others :</b> {event.prize?.[2]}</p>
             </div>
 
           </div>
@@ -427,6 +429,7 @@ export default function EventDetail() {
 
       </footer>
 
+    </div>
     </div>
   );
 }
