@@ -109,7 +109,17 @@ export default function Hackathon() {
           {/* ABOUT */}
           <div className="event-card-box full">
             <h2>About the Hackathon</h2>
-            <p>Details will be updated soon.</p>
+            <p style={{ whiteSpace: "pre-line", lineHeight: "1.6" }}>
+              {`Problem Statement
+              • The problem statement will be given at the start of the event
+              • Participants must work only on the given problem
+              • Pre-decided ideas are not allowed
+
+              Originality
+              • All code and designs must be created during the hackathon
+              • Use of pre-built projects is strictly not allowed
+              • Open-source libraries and APIs can be used`}
+              </p>
           </div>
 
           {/* DETAILS */}

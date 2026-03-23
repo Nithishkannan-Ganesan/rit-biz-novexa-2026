@@ -126,7 +126,23 @@ const eventData = {
     title: "Forbidden Arena (Esports)",
     time: "2:00 PM - 3:00 PM",
     location: "Class Room",
-    about: "",
+    about: [
+  {
+    title: "Round 1 (Online Qualifier - Battle Royale)",
+    desc: `• Battle Royale format conducted online
+• All registered teams will participate
+• Top 6 teams will be shortlisted
+• Selection based on performance and survival`
+  },
+  {
+    title: "Round 2 (Offline Finals - Clash Squad)",
+    desc: `• Selected teams will compete live
+• Fixtures will be created for matchups
+• Teams will battle against each other
+• Gameplay will test coordination and strategy
+• One team will be crowned as the winner`
+  }
+],
     teamSize: "Team Event",
     coordinators: [
       "Ashin Sree P, Manoj Kumar M",
@@ -137,18 +153,45 @@ const eventData = {
   },
 
   debate: {
-    title: "Throne of Crowns (Geo-Politics Debate)",
-    time: "2:00 PM - 3:00 PM",
-    location: "Mechanical Seminar Hall",
-    about: "",
-    teamSize: "2 - 3 members",
-    coordinators: [
-      "Vaishnavi V, Jason Ezra",
-      
-    ],
-    faculty: "M Preethi Ram",
-    prize: ["₹1000 Cash Prize + Certificate", "₹500 Cash Prize + Certificate"]
-  },
+  title: "Throne of Crowns (Geo-Politics Debate)",
+  time: "2:00 PM - 3:00 PM",
+  location: "Mechanical Seminar Hall",
+  about: [
+    {
+      title: "Round 1 (Opening Round)",
+      desc: `Each team presents arguments based on their assigned stance
+• 3 Affirmative teams (For the motion) and 3 Negative teams (Against the motion)
+• Structured presentation order followed and Focus on clarity, logic, and confidence`
+    },
+    {
+      title: "Round 2 (Rebuttal Round)",
+      desc: `Advanced round with higher difficulty
+• New topic will be given on the spot and Only top 4 teams will qualify
+• Teams must present fresh arguments and Includes rebuttal and counter-arguments`
+    },
+    
+    {
+      title: "Evaluation Criteria",
+      desc: `Judging based on multiple factors
+• Strength of arguments and Logical reasoning
+• Confidence & presentation and Rebuttal effectiveness
+• Clarity and structure and Team coordination`
+    },
+    {
+      title: "Rules & Regulations",
+      desc: `Strict guidelines to ensure fairness
+• Teams must stick to assigned side (For/Against) and No prior topic knowledge will be given
+• No use of mobile phones or electronic devices and Plagiarism or misconduct leads to disqualification
+• Judges’ decision is final`
+    }
+  ],
+  teamSize: "2-3 members (6 teams per topic)",
+  coordinators: [
+    "Vaishnavi V, Jason Ezra",
+  ],
+  faculty: "M Preethi Ram",
+  prize: ["₹1000 Cash Prize + Certificate", "₹500 Cash Prize + Certificate"]
+},
 
   auction: {
   title: "Wizarding Premier Auction (IPL Auction)",
