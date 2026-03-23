@@ -179,18 +179,39 @@ const eventData = {
 },
 
   quiz: {
-    title: "Wizard's Quiz Bowl",
-    time: "2:00 PM - 3:00 PM",
-    location: "Business Analytics Lab",
-    about: "",
-    teamSize: "2 - 3 members",
-    coordinators: [
-      "Kaavyadharshini, Bala Vignesh S",
-      
-    ],
-    faculty: "M Rekha",
-    prize: ["₹1000 Cash Prize + Certificate", "₹500 Cash Prize + Certificate"]
-  }
+  title: "Wizard's Quiz Bowl",
+  time: "2:00 PM - 3:00 PM",
+  location: "Business Analytics Lab",
+  about: [
+    {
+      title: "Round 1 (Preliminary Round)",
+      desc: `Basic knowledge round covering multiple domains
+• Questions from various topics
+• Tests general awareness and fundamentals
+• Participants with highest scores qualify for next round`
+    },
+    {
+      title: "Round 2 (Rapid Fire Round)",
+      desc: `Speed-based answering round
+• Limited time to answer questions
+• Focus on speed and accuracy
+• Tests presence of mind and quick thinking`
+    },
+    {
+      title: "Round 3 (Final Challenge Round)",
+      desc: `Final competitive round among top participants
+• Includes tougher and analytical questions
+• Tests deeper understanding and logic
+• Determines the ultimate winner`
+    }
+  ],
+  teamSize: "2 members",
+  coordinators: [
+    "Kaavyadharshini, Bala Vignesh S",
+  ],
+  faculty: "M Rekha",
+  prize: ["₹1000 Cash Prize + Certificate", "₹500 Cash Prize + Certificate"]
+}
 };
 
 export default function EventDetail() {
