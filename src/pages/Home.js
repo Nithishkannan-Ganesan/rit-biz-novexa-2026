@@ -4,10 +4,11 @@ import { useState } from "react";
 
 import bgImage from "../assets/images/hogwart-bg.webp";
 import clgLogo from "../assets/images/Ramco-logo.jpg";
-import houses from "../assets/images/houses.png";
 import aboutbg from "../assets/images/about-section-bg.png";
 import bannerBg from "../assets/images/banner-bg.png";
 import poster from "../assets/images/poster.jpeg";
+import HousesSection from "../components/HousesSection";
+
 
 export default function Home() {
 
@@ -43,7 +44,9 @@ export default function Home() {
         </div>
 
         {/* RIGHT LOGO (OPTIONAL EMPTY) */}
-        <div className="header-right"></div>
+        <div className="header-right">
+          
+        </div>
 
       </div>
 
@@ -160,41 +163,48 @@ export default function Home() {
         style={{ backgroundImage: `url(${aboutbg})` }}
       >
 
-        {/* ABOUT CARD */}
-        <div className="about-card">
+        <div
+  className="about-wrapper"
+  style={{ backgroundImage: `url(${aboutbg})` }}
+>
 
-          <h2 className="about-title">
-            About RIT Biz Novexa
-          </h2>
+  {/* 🔹 TOP - ABOUT FULL WIDTH */}
+  <div className="about-top">
+    <div className="about-card">
+      <h2 className="about-title">About RIT Biz Novexa</h2>
 
-          <p>
-            RIT Biz Novexa is a dynamic symposium organized by the Department of 
-            Computer Science and Business Systems at Ramco Institute of Technology.
+      <p>
+        RIT Biz Novexa is a dynamic symposium organized by the Department of 
+        Computer Science and Business Systems at Ramco Institute of Technology.
 
-            <br /><br />
+        <br /><br />
 
-            The symposium features technical and non-technical events including 
-            coding, paper presentations, marketing, and interactive competitions.
+        The symposium features technical and non-technical events including 
+        coding, paper presentations, marketing, and interactive competitions.
 
-            <br /><br />
+        <br /><br />
 
-            Join us where creativity meets technology.
-          </p>
+        Join us where creativity meets technology.
+      </p>
+    </div>
+  </div>
+  
 
-        </div>
+  {/* 🔹 BOTTOM - TWO COLUMN */}
+  <div className="about-bottom">
 
-        {/* HOUSES */}
-        <div className="houses-container">
-          <p style={{color: "white", margin: "20px"}}>
-            You will be chosen into any one of the four major houses to participate
-          </p>
+    {/* LEFT */}
+    
 
-          <div className="house-image">
-            <img src={houses} alt="houses" />
-          </div>
-        </div>
+    {/* RIGHT */}
+    <HousesSection />
+
+  </div>
+
+</div>
 
       </div>
+      
 
       {/* 🔻 FOOTER */}
       <footer className="footer-modern">
@@ -210,15 +220,15 @@ export default function Home() {
         <div className="footer-socials">
 
           <a href="https://www.instagram.com/ritcsbs?igsh=MThsYWpzN2JndHNtZw==" className="social-btn">
-            <b> CSBS Instagram</b>
+            <b>RIT CSBS Instagram</b>
           </a>
 
           <a href="https://www.linkedin.com/posts/rit-csbs-212949257_with-the-advent-of-welcomingfreshers-to-activity-6999695434801655809-vrEU?utm_source=share&utm_medium=member_desktop" className="social-btn">
-             <b> CSBS LinkedIn </b>
+             <b>RIT CSBS LinkedIn </b>
           </a>
 
           <a href="https://www.facebook.com/profile.php?id=100087866146448" className="social-btn">
-             <b> CSBS Facebook </b>
+             <b>RIT CSBS Facebook </b>
           </a>
 
         </div>

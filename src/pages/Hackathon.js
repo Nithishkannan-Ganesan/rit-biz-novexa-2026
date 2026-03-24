@@ -7,6 +7,7 @@ import clgLogo from "../assets/images/Ramco-logo.jpg";
 import eventBg from "../assets/images/event-bg.jpg";
 import hackPoster from "../assets/images/hackposter.jpeg";
 
+
 export default function Hackathon() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -31,6 +32,8 @@ export default function Hackathon() {
           <h2>DEPARTMENT OF CSBS</h2>
         </div>
       </div>
+
+      
 
       {/* NAVBAR */}
       <div className="navbar">
@@ -131,12 +134,13 @@ export default function Hackathon() {
               <p><b>Date :</b> 10th April 2026</p>
               <p><b>Time :</b> 11:00 AM - 1:00 PM</p>
               <p><b>Location :</b> IT Lab</p>
+              <p><b>Team Size :</b> 1 - 3 members</p>
             </div>
 
             <div className="event-card-box half">
               <h2>Prize Pool</h2>
-              <p><b>1st :</b> ₹1000 Cash Prize + Certificate</p>
-              <p><b>2nd :</b> ₹500 Cash Prize + Certificate</p>
+              <p><b>1st :</b> Cash Prize + Certificate</p>
+              <p><b>2nd :</b> Cash Prize + Certificate</p>
               <p><b>Others :</b> Participation Certificate(Hard copy)</p>
             </div>
 
@@ -147,12 +151,17 @@ export default function Hackathon() {
 
             <div className="event-card-box half">
               <h2>Student Coordinators</h2>
-              <p>Gayathri Devi, Kathirvel G</p>
+              <p>Gayathri Devi, Jason Ezra</p>
             </div>
 
             <div className="event-card-box half">
               <h2>Faculty Coordinator</h2>
               <p>B Yazhini</p>
+            </div>
+
+            <div className="event-card-box half">
+              <h2>Contact</h2>
+              <p>7200704037</p>
             </div>
 
           </div>
@@ -174,15 +183,15 @@ export default function Hackathon() {
         <div className="footer-socials">
 
           <a href="https://www.instagram.com/ritcsbs?igsh=MThsYWpzN2JndHNtZw==" className="social-btn">
-            <b> CSBS Instagram</b>
+            <b>RIT CSBS Instagram</b>
           </a>
 
           <a href="https://www.linkedin.com/posts/rit-csbs-212949257_with-the-advent-of-welcomingfreshers-to-activity-6999695434801655809-vrEU?utm_source=share&utm_medium=member_desktop" className="social-btn">
-             <b> CSBS LinkedIn </b>
+             <b>RIT CSBS LinkedIn </b>
           </a>
 
           <a href="https://www.facebook.com/profile.php?id=100087866146448" className="social-btn">
-             <b> CSBS Facebook </b>
+             <b>RIT CSBS Facebook </b>
           </a>
 
         </div>

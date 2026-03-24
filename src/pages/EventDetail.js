@@ -6,18 +6,24 @@ import bannerBg from "../assets/images/banner-bg.png";
 import clgLogo from "../assets/images/Ramco-logo.jpg";
 import eventBg from "../assets/images/event-bg.jpg";
 
+
 /* EVENT DATA */
 const eventData = {
   paper: {
     title: "Stranger Minds (Paper Presentation)",
     time: "11:00 AM - 1:00 PM",
     location: "Mechanical Seminar Hall",
-    about:
-      "Stranger Minds is a thrilling on-the-spot technical paper presentation event where participants step into the unknown.",
-    teamSize: "2 - 3 members",
+    about: [
+      {
+        title: "",
+        desc: "Stranger Minds is a technical paper presentation event designed to evaluate participants’ knowledge, research ability, presentation skills, and innovation in emerging technologies. Participants can choose any one topic from the given list of 10 topics, prepare a presentation, and present it on the day of the symposium."
+      }],
+    teamSize: "1 - 3 members",
     coordinators: ["Ramya K, Nithish Kannan G"],
     faculty: "M Rama Krishnan",
-    prize: ["Shield(Team) + Certificate", "Shield(Team) + Certificate", "Participation certificates"]
+    contact: "8220396695",
+    prize: ["Shield(Team) + Certificate", "Shield(Team) + Certificate", "Participation certificates"],
+    doc: "/docs/paper.pdf"
   },
 
   coding: {
@@ -26,22 +32,16 @@ const eventData = {
     location: "Business Analytics Lab",
     about: [
       {
-        title: "Round 1 (MCQ Quiz)",
-        desc: "Time-bound MCQs based on speed and accuracy."
-      },
-      {
-        title: "Round 2 (Debugging)",
-        desc: "Debug the given code using the choosen programming language."
-      },
-      {
-        title: "Round 3 (Scenario-Based Coding)",
-        desc: "Real-world problem solving using VS Code."
+        title: "",
+        desc: "This is a coding competition conducted through a dedicated website platform.The event tests participants' programming knowledge, debugging skills, and problem-solving ability.Participants will complete all rounds on the website within the given time limits."
       }
     ],
-    teamSize: "2 - 3 members",
+    teamSize: "1 - 3 members",
     coordinators: ["Santhosh G, SivaPriya"],
     faculty: "M Jeya Sundari",
-    prize: ["₹1000 Cash Prize + Certificate", "₹500 Cash Prize + Certificate", "Participation Certificates"]
+    contact: "9489707669",
+    prize: ["Cash Prize + Certificate", "Cash Prize + Certificate", "Participation Certificates"],
+    doc: "/docs/coding.pdf"
   },
   web: {
   title: "Slytherin WebForge (Web Design)",
@@ -50,76 +50,42 @@ const eventData = {
 
   about: [
     {
-      title: "Round 1",
-      desc: "Frontend Frenzy is a dynamic web design competition where participants build visually stunning and responsive web interfaces using modern frontend technologies with the support of AI tools.",
+      title: "",
+      desc: "This is a web designing competition that tests creativity, UI/UX skills, and logicalthinking. Participants will create modern and responsive web interfaces usingfrontend technologies.AI tools like ChatGPT are allowed, but participants must understand and explaintheir work.",
       points: [
-        "Focus on UI/UX design and creativity",
-        "Use of AI tools like ChatGPT allowed",
-        "Emphasis on smart problem-solving",
-        "Deliver a complete frontend solution within limited time"
+        
       ]
     },
-    {
-      title: "Round 2",
-      desc: "Participants will design a real-world frontend solution based on a given problem statement within an hour(No backend required).",
-      points: [
-        "1 Hour development time",
-        "Real-world application problem",
-        "Fully working frontend prototype",
-        "No backend required"
-      ]
-    },
-    {
-      title: "Technologies Allowed",
-      desc: "Participants can use any modern frontend stack such as HTML, CSS, JavaScript, React, Angular, Vue, Bootstrap, Tailwind,AI tools like ChatGPT, Copilot.",
-      
-    },
-    {
-      title: "Judging Criteria",
-      desc: "Evaluation is based on multiple performance factors such as UI/UX & Design Quality, Responsiveness, Efficient use of AI tools, Understanding & explanation and Time management.",
-      
-    }
   ],
 
   teamSize: "Individual / Team of 2",
   coordinators: ["Thanalakshmi G, Pradeep K"],
   faculty: "M Shabana Fathima",
-  prize: ["Shield(Team) + Certificate", "Shield(Team) + Certificate", "Participation certificates"]
+  contact: "9345395524",
+  prize: ["Shield(Team) + Certificate", "Shield(Team) + Certificate", "Participation certificates"],
+  doc: "/docs/web.pdf"
   },
 
   ctf: {
   title: "Heist Protocol (CTF Challenge)",
   time: "11:00 AM - 1:00 PM",
-  location: "OOPA Lab",
+  location: "OOPS Lab",
 
   about: [
     {
-      title: "Round 1 (Beginner CTF)",
-      desc: "Basic problem-solving challenges to identify hidden flags.",
+      title: "",
+      desc: "This is a technical Capture The Flag competition designed to test participants' cybersecurity skills, problem-solving abilities, reverse engineering expertise, and quick thinking under pressure. The event follows a Squid Game theme, where participants must survive multiple rounds by solving progressively difficult security challenges. Participants must rely on their technical skills and teamwork to capture flags within the given time. The competition focuses on engagement while challenging participants to think creatively and analytically.",
       points: [
-        "Easy Cryptography (Caesar Cipher, Base64)",
-        "Web Basics (view page source, hidden HTML content)",
-        "Logic and puzzle-based questions",
-        "Beginner-friendly and open to all participants",
-        "Shortlisting based on number of correct flags"
-      ]
-    },
-    {
-      title: "Round 2 (Intermediate CTF)",
-      desc: "Moderately challenging tasks involving data analysis.",
-      points: [
-        "Image-based challenges (basic steganography)",
-        "File-based challenges (hidden data in text/PDF files)",
-        "QR/clue-based challenges",
-        "Final evaluation based on total flags captured"
       ]
     }
   ],
 
-  teamSize: "2 - 3 members",
-  coordinators: ["Jason Ezra, Kaviya N"],
+  teamSize: "1 - 3 members",
+  coordinators: ["Kathirvel G, Kaviya N"],
   faculty: "M Preethi Ram",
-  prize: ["Shield(Team) + Certificate", "Shield(Team) + Certificate", "Participation certificates"]
+  contact: "9344973243",
+  prize: ["Shield(Team) + Certificate", "Shield(Team) + Certificate", "Participation certificates"],
+  doc: "/docs/ctf.pdf"
   },
 
   esports: {
@@ -148,8 +114,10 @@ const eventData = {
       "Ashin Sree P, Manoj Kumar M",
       
     ],
+    contact: "8220315775",
     faculty: "Ereena Veerappa Dinesh",
-    prize: ["₹2500 Cash Prize + Certificate", "₹1500 Cash Prize + Certificate", "Participation Certificate(Hard copy for 3 - 6 rankings and E-certificate for other participants"]
+    prize: ["₹2500 Cash Prize + Certificate", "₹1500 Cash Prize + Certificate", "Participation Certificate(Hard copy for 3 - 6 rankings and E-certificate for other participants)"],
+    doc: "/docs/esports.pdf"
   },
 
   debate: {
@@ -158,39 +126,18 @@ const eventData = {
   location: "Mechanical Seminar Hall",
   about: [
     {
-      title: "Round 1 (Opening Round)",
-      desc: `Each team presents arguments based on their assigned stance
-• 3 Affirmative teams (For the motion) and 3 Negative teams (Against the motion)
-• Structured presentation order followed and Focus on clarity, logic, and confidence`
-    },
-    {
-      title: "Round 2 (Rebuttal Round)",
-      desc: `Advanced round with higher difficulty
-• New topic will be given on the spot and Only top 4 teams will qualify
-• Teams must present fresh arguments and Includes rebuttal and counter-arguments`
-    },
-    
-    {
-      title: "Evaluation Criteria",
-      desc: `Judging based on multiple factors
-• Strength of arguments and Logical reasoning
-• Confidence & presentation and Rebuttal effectiveness
-• Clarity and structure and Team coordination`
-    },
-    {
-      title: "Rules & Regulations",
-      desc: `Strict guidelines to ensure fairness
-• Teams must stick to assigned side (For/Against) and No prior topic knowledge will be given
-• No use of mobile phones or electronic devices and Plagiarism or misconduct leads to disqualification
-• Judges’ decision is final`
+      title: "",
+      desc: "Throne of Crowns is an intellectual debate competition where participants engage in a battle of words, logic, and reasoning. The event tests critical thinking, presence of mind, confidence, structured argument building, and rebuttal skills. Topics will be revealed onthe spot to ensure spontaneity"
     }
   ],
-  teamSize: "2-3 members (6 teams per topic)",
+  teamSize: "2 - 3 members (6 teams per topic)",
   coordinators: [
-    "Vaishnavi V, Jason Ezra",
+    "Vaishnavi V, Rajakaleeswaran S",
   ],
+  contact: "9385538055",
   faculty: "M Preethi Ram",
-  prize: ["Shield(Team) + Certificate", "Shield(Team) + Certificate", "Participation certificates"]
+  prize: ["Shield(Team) + Certificate", "Shield(Team) + Certificate", "Participation certificates"],
+  doc: "/docs/debate.pdf"
 },
 
   auction: {
@@ -199,26 +146,21 @@ const eventData = {
   location: "Data Analytics Lab",
   about: [
     {
-      title: "Pre-Event Responsibilities",
+      title: "",
       desc: `• Prepare player list with categories and base prices and Design clear rules and guidelines
 • Arrange random shuffle method for team formation and Assign IPL team names randomly to each group
 • Fix budget limits for each team and Arrange materials (player sheets, bid cards, scoreboard)
 • Brief participants about event flow and rules`
-    },
-    {
-      title: "During the Event",
-      desc: `• Act as an auction host or assist the auctioneer and Conduct smooth bidding process
-• Ensure teams follow their assigned franchises and Monitor budget usage and player selection
-• Update the scoreboard after each bid and Maintain discipline and fairness and Resolve conflicts or confusion instantly
-• Keep the event engaging and time-bound`
     }
   ],
-  teamSize: "2 - 3 members",
+  teamSize: "2 - 4 members",
   coordinators: [
     "Raja Pandiyan P, Mufrin Ashika O J",
   ],
+  contact: "9043515452",
   faculty: "M Jeya Sundari",
-  prize: ["Shield(Team) + Certificate", "Shield(Team) + Certificate", "Participation certificates"]
+  prize: ["Shield(Team) + Certificate", "Shield(Team) + Certificate", "Participation certificates"],
+  doc: "/docs/aution.pdf"
 },
 
   quiz: {
@@ -227,33 +169,18 @@ const eventData = {
   location: "Business Analytics Lab",
   about: [
     {
-      title: "Round 1 (Preliminary Round)",
-      desc: `Basic knowledge round covering multiple domains
-• Questions from various topics
-• Tests general awareness and fundamentals
-• Participants with highest scores qualify for next round`
-    },
-    {
-      title: "Round 2 (Rapid Fire Round)",
-      desc: `Speed-based answering round
-• Limited time to answer questions
-• Focus on speed and accuracy
-• Tests presence of mind and quick thinking`
-    },
-    {
-      title: "Round 3 (Final Challenge Round)",
-      desc: `Final competitive round among top participants
-• Includes tougher and analytical questions
-• Tests deeper understanding and logic
-• Determines the ultimate winner`
+      title: "",
+      desc: "This is a fun non-technical quiz competition designed to test participants general knowledge, creativity, memory power, and quick thinking. The event includes multiple interesting rounds such as logical puzzles, picture guessing, estimation questions, and fun brain challenges. Participants must rely on their thinking skills and teamwork to answer questions within the given time. The quiz focuses on entertainment and engagement while encouraging participants to think quickly and creatively"
     }
   ],
   teamSize: "2 members",
   coordinators: [
     "Kaavyadharshini, Bala Vignesh S",
   ],
+  contact: "8903590156",
   faculty: "M Rekha",
-  prize: ["Shield(Team) + Certificate", "Shield(Team) + Certificate", "Participation certificates"]
+  prize: ["Shield(Team) + Certificate", "Shield(Team) + Certificate", "Participation certificates"],
+  doc: "/docs/quiz.pdf"
 }
 };
 
@@ -356,6 +283,15 @@ export default function EventDetail() {
             ) : (
               <p>Details will be updated soon.</p>
             )}
+            {/* VIEW DOCUMENT BUTTON */}
+<div className="view-doc-container">
+  <button
+    className="view-doc-btn"
+    onClick={() => window.open(event.doc, "_blank")}
+  >
+    OPEN RULEBOOK
+  </button>
+</div>
           </div>
 
           {/* DETAILS */}
@@ -393,6 +329,7 @@ export default function EventDetail() {
               ))}
 
               <p><b>Faculty : </b> {event.faculty}</p>
+              <p><b>Contact : </b> {event.contact}</p>
             </div>
 
           </div>
@@ -414,15 +351,15 @@ export default function EventDetail() {
         <div className="footer-socials">
 
           <a href="https://www.instagram.com/ritcsbs?igsh=MThsYWpzN2JndHNtZw==" className="social-btn">
-            <b> CSBS Instagram</b>
+            <b>RIT CSBS Instagram</b>
           </a>
 
           <a href="https://www.linkedin.com/posts/rit-csbs-212949257_with-the-advent-of-welcomingfreshers-to-activity-6999695434801655809-vrEU?utm_source=share&utm_medium=member_desktop" className="social-btn">
-             <b> CSBS LinkedIn </b>
+             <b>RIT CSBS LinkedIn </b>
           </a>
 
           <a href="https://www.facebook.com/profile.php?id=100087866146448" className="social-btn">
-             <b> CSBS Facebook </b>
+             <b>RIT CSBS Facebook </b>
           </a>
 
         </div>

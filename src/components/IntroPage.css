@@ -104,7 +104,7 @@ html, body {
   font-family: 'Harry Potter', serif;
 
   font-size: clamp(32px, 6vw, 60px);
-  line-height: 1.4;
+  line-height: 1.6;
 
   background: linear-gradient(#fff4b0, #d4af37, #8b6f00);
   -webkit-background-clip: text;

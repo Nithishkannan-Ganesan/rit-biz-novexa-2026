@@ -16,6 +16,7 @@ import debateImg from "../assets/images/debate.png";
 import auctionImg from "../assets/images/auction.png";
 import quizImg from "../assets/images/quiz.png";
 
+
 export default function Events() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -174,15 +175,15 @@ export default function Events() {
         <div className="footer-socials">
 
           <a href="https://www.instagram.com/ritcsbs?igsh=MThsYWpzN2JndHNtZw==" className="social-btn">
-            <b> CSBS Instagram</b>
+            <b>RIT CSBS Instagram</b>
           </a>
 
           <a href="https://www.linkedin.com/posts/rit-csbs-212949257_with-the-advent-of-welcomingfreshers-to-activity-6999695434801655809-vrEU?utm_source=share&utm_medium=member_desktop" className="social-btn">
-             <b> CSBS LinkedIn </b>
+             <b>RIT CSBS LinkedIn </b>
           </a>
 
           <a href="https://www.facebook.com/profile.php?id=100087866146448" className="social-btn">
-             <b> CSBS Facebook </b>
+             <b>RIT CSBS Facebook </b>
           </a>
 
         </div>

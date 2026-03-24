@@ -831,7 +831,7 @@ html, body {
   padding: 20px;
   border-radius: 15px;
 
-  background: rgba(255,255,255,0.05);
+  background: #02021a;
   border: 1px solid #1a1a3a;
 
   transition: all 0.4s ease;   /* 🔥 smooth animation */
@@ -951,5 +951,657 @@ b{
   to {
     opacity: 1;
   }
+}
+
+.metallic-text {
+  font-family: 'Harry Potter', serif;
+  font-size: 22px;
+
+  background: linear-gradient(#fff4b0, #d4af37, #8b6f00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  margin-left: 0px; /* 🔥 adjust if needed */
+}
+
+.highlights {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+
+.highlight-box {
+  background: rgba(255,255,255,0.05);
+  padding: 15px 20px;
+  border-radius: 12px;
+  text-align: center;
+
+  transition: 0.3s;
+}
+
+.highlight-box h3{
+  color: #00e6ff;
+}
+
+.highlight-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(123,77,255,0.4);
+}
+
+.cta-section {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.cta-btn {
+  padding: 12px 30px;
+  border-radius: 25px;
+  background: linear-gradient(135deg, #5f6cff, #7b4dff);
+  color: white;
+  text-decoration: none;
+}
+
+/* SECTION CONTAINER */
+.why-section {
+  margin-top: 40px;
+  padding: 25px;
+  margin-left: 0px;
+
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+
+  border: 1px solid rgba(123, 77, 255, 0.3);
+
+  backdrop-filter: blur(10px);
+
+  transition: 0.4s ease;
+}
+
+/* HOVER EFFECT (CARD LIFT) */
+.why-section:hover {
+  transform: translateY(-6px);
+
+  box-shadow:
+    0 0 20px rgba(123, 77, 255, 0.4),
+    0 0 40px rgba(0, 230, 255, 0.2);
+}
+
+/* TITLE */
+.why-section h2 {
+  font-family: 'Harry Potter', serif;
+  font-size: 24px;
+
+  margin-bottom: 20px;
+
+  background: linear-gradient(#fff4b0, #d4af37, #8b6f00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* LIST */
+.why-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* EACH POINT */
+.why-section li {
+  position: relative;
+
+  padding: 12px 15px 12px 35px;
+  margin-bottom: 12px;
+
+  font-size: 15px;
+  color: #e6e6e6;
+
+  background: rgba(255,255,255,0.03);
+  border-radius: 10px;
+
+  transition: 0.3s ease;
+}
+
+/* LEFT GLOW LINE */
+.why-section li::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+
+  background: #7b4dff;
+
+  box-shadow: 0 0 10px #7b4dff;
+}
+
+/* HOVER EFFECT */
+.why-section li:hover {
+  transform: translateX(8px);
+
+  background: rgba(123,77,255,0.1);
+
+  box-shadow: 0 0 10px rgba(123,77,255,0.3);
+}
+
+/* FLEX LAYOUT */
+.about-flex {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 40px;
+}
+
+/* LEFT SIDE */
+.about-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* RIGHT SIDE */
+.about-right {
+  flex: 1;
+  text-align: center;
+}
+
+/* HOUSE IMAGE */
+.house-img {
+  width: 100%;
+  max-width: 450px;
+  margin-top: 15px;
+
+  transition: 0.4s ease;
+}
+
+.house-img:hover {
+  transform: scale(1.05);
+}
+
+/* TEXT ABOVE IMAGE */
+.house-text {
+  color: white;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .about-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-right {
+    margin-top: 20px;
+  }
+}
+
+/* WRAPPER */
+.about-wrapper {
+  padding: 60px 20px;
+}
+
+/* 🔹 TOP FULL WIDTH */
+.about-top {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.about-card {
+  width: 100%;
+  max-width: 1000px;
+  padding: 30px;
+  border-radius: 20px;
+
+  background: rgba(0, 0, 30, 0.8);
+  border: 1px solid rgba(123, 77, 255, 0.3);
+
+  box-shadow: 0 0 20px rgba(123, 77, 255, 0.2);
+}
+
+/* 🔹 BOTTOM LAYOUT */
+.about-bottom {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* LEFT */
+.why-section {
+  flex: 1;
+  max-width: 500px;
+}
+
+/* RIGHT */
+.house-section {
+  flex: 1;
+  text-align: center;
+}
+
+/* IMAGE */
+.house-img {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 10px;
+  transition: 0.4s ease;
+}
+
+.house-img:hover {
+  transform: scale(1.05);
+}
+
+/* TEXT */
+.house-text {
+  color: white;
+  margin-bottom: 10px;
+}
+
+/* 📱 RESPONSIVE */
+@media (max-width: 768px) {
+  .about-bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* ================= ABOUT FULL SCREEN FIX ================= */
+
+.about-wrapper {
+  width: 100%;
+  min-height: auto;   /* 🔥 FULL SCREEN HEIGHT */
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 60px 40px;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* 🔹 TOP (FULL WIDTH CARD LOOK) */
+.about-top {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+/* 🔥 MAIN ABOUT BOX */
+.about-card {
+  width: 100%;
+  max-width: 1300px;   /* 🔥 wider */
+
+  padding: 40px;
+  border-radius: 20px;
+
+  background: rgba(0, 0, 40, 0.85);
+  border: 1px solid rgba(123, 77, 255, 0.3);
+
+  box-shadow: 0 0 40px rgba(123, 77, 255, 0.2);
+
+  transition: 0.4s ease;
+}
+
+/* HOVER EFFECT */
+.about-card:hover {
+  transform: translateY(-5px);
+  box-shadow:
+    0 0 30px rgba(123,77,255,0.4),
+    0 0 60px rgba(0,230,255,0.2);
+}
+
+/* TEXT */
+.about-card p {
+  font-size: 15px;
+  color: #ddd;
+  line-height: 1.8;
+}
+
+/* 🔹 BOTTOM SECTION */
+.about-bottom {
+  width: 100%;
+  max-width: 1300px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  gap: 60px;
+}
+
+/* LEFT */
+.why-section {
+  flex: 1;
+  max-width: 500px;
+}
+
+/* RIGHT */
+.house-section {
+  flex: 1;
+  text-align: center;
+}
+
+/* IMAGE */
+.house-img {
+  width: 100%;
+  max-width: 450px;
+  margin-top: 15px;
+
+  transition: 0.4s ease;
+}
+
+.house-img:hover {
+  transform: scale(1.05);
+}
+
+/* TEXT */
+.house-text {
+  color: white;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* 📱 MOBILE FIX */
+@media (max-width: 768px) {
+  .about-wrapper {
+    padding: 40px 20px;
+  }
+
+  .about-bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-card {
+    padding: 25px;
+  }
+}
+
+/* ================= HOUSES SECTION ================= */
+
+.houses-wrapper {
+  margin-top: 0px;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* TITLE */
+.houses-title {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* LAYOUT */
+.houses-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+/* LEFT SIDE */
+.houses-left {
+  display: grid;
+  grid-template-columns: repeat(2, 120px);
+  gap: 25px;
+}
+
+/* HOUSE CARD */
+.house-card {
+  background: rgba(255,255,255,0.05);
+  border-radius: 15px;
+  padding: 10px;
+
+  transition: 0.3s ease;
+  cursor: pointer;
+
+  border: 1px solid transparent;
+}
+
+.house-card img {
+  width: 100%;
+  height: 90px;
+  object-fit: contain;
+}
+
+/* NAME */
+.house-card p {
+  color: white;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+/* HOVER EFFECT */
+.house-card:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 20px rgba(123,77,255,0.5);
+}
+
+/* ACTIVE HOUSE */
+.house-card.active {
+  border: 1px solid #7b4dff;
+  box-shadow: 0 0 25px rgba(123,77,255,0.6);
+}
+
+/* RIGHT SIDE */
+.houses-right {
+  text-align: left;
+  min-width: 250px;
+}
+
+/* TITLE */
+.houses-right h3 {
+  margin-bottom: 15px;
+}
+
+/* EVENT LIST */
+.houses-right ul {
+  list-style: none;
+  padding: 0;
+}
+
+.houses-right li {
+  padding: 10px;
+  margin-bottom: 10px;
+
+  background: rgba(255,255,255,0.05);
+  border-radius: 8px;
+
+  color: white;
+
+  transition: 0.3s;
+}
+
+/* HOVER */
+.houses-right li:hover {
+  transform: translateX(8px);
+  background: rgba(123,77,255,0.2);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .houses-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .houses-left {
+    grid-template-columns: repeat(2, 100px);
+  }
+}
+
+.house-card img {
+  width: 100%;
+  height: 90px;
+  object-fit: contain;
+  filter: brightness(1.1) contrast(1.2);
+  background: transparent;
+}
+
+.house-card {
+  position: relative;
+}
+
+.house-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 15px;
+
+  background: radial-gradient(circle, rgba(123,77,255,0.25), transparent 70%);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.house-card:hover::before {
+  opacity: 1;
+}
+
+/* ================= MOBILE FIX ================= */
+
+@media (max-width: 768px) {
+
+  /* MAIN SECTION STACK */
+  .about-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* WHY PARTICIPATE CENTER */
+  .why-card {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  /* HOUSES SECTION CENTER */
+  .houses-wrapper {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* STACK HOUSES + EVENTS */
+  .houses-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  /* GRID FIX */
+  .houses-left {
+    grid-template-columns: repeat(2, 120px);
+    justify-content: center;
+  }
+
+  /* EVENTS CENTER */
+  .houses-right {
+    text-align: center;
+    width: 100%;
+  }
+
+  /* TITLE FIX */
+  .houses-title {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* STACK EVERYTHING */
+  .about-wrapper {
+    margin-top: 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  /* 🔥 WHY PARTICIPATE BIGGER */
+  .why-card {
+    width: 95%;
+    padding: 25px 18px;
+    margin: 0 auto;
+
+    transform: scale(1.05);
+  }
+
+  .why-card h2 {
+    font-size: 20px;
+  }
+
+  .why-card li {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  /* 🔻 HOUSES SMALLER */
+  .houses-wrapper {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .houses-title {
+    font-size: 13px;
+    padding: 0 10px;
+  }
+
+  /* GRID SMALLER */
+  .houses-left {
+    grid-template-columns: repeat(2, 90px);
+    gap: 15px;
+    justify-content: center;
+  }
+
+  .house-card {
+    padding: 8px;
+    border-radius: 12px;
+  }
+
+  .house-card img {
+    height: 60px;   /* 🔥 reduce image size */
+  }
+
+  .house-card p {
+    font-size: 11px;
+  }
+
+  /* EVENTS CENTER */
+  .houses-right {
+    text-align: center;
+  }
+
+  .houses-right h3 {
+    font-size: 16px;
+  }
+
+  .houses-right li {
+    font-size: 13px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .about-wrapper {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+
+  .houses-wrapper {
+    margin-top: 0px;
+  }
+
 }
 /* ================= END ================= */

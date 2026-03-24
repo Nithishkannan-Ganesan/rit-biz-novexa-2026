@@ -311,3 +311,28 @@ b{
     opacity: 1;
   }
 }
+
+.view-doc-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+/* NORMAL BUTTON (like first image) */
+.view-doc-btn {
+  background: linear-gradient(135deg, #5f7cff, #7c5cff);
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 25px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* HOVER EFFECT (like second image glow) */
+.view-doc-btn:hover {
+  background: transparent;
+  border: 2px solid #7c5cff;
+  box-shadow: 0 0 12px #7c5cff, 0 0 25px rgba(124, 92, 255, 0.6);
+}
