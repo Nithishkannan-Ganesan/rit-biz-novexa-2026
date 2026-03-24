@@ -1604,4 +1604,359 @@ b{
   }
 
 }
+
+/* HOUSES SECTION CENTERING */
+.houses-center-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 50px 20px 70px;
+  width: 100%;
+}
+
+/* PARAGRAPH STYLING ABOVE HOUSES */
+.houses-heading-box {
+  margin-bottom: 35px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.houses-intro {
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.8;
+  color: #fff;
+  max-width: 900px;
+  padding: 18px 28px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  letter-spacing: 0.4px;
+}
+
+.houses-intro span {
+  color: #ffd700;
+  text-shadow: 0 0 8px rgba(255, 215, 0, 0.7);
+}
+
+/* OPTIONAL: IF HOUSESSECTION ROOT NEEDS CENTER ALIGNMENT */
+.houses-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .houses-intro {
+    font-size: 1.05rem;
+    padding: 14px 18px;
+    line-height: 1.6;
+    max-width: 95%;
+  }
+
+  .houses-center-section {
+    padding: 35px 15px 50px;
+  }
+}
+
+/* ================= FINAL HOUSES ALIGNMENT FIX ================= */
+
+/* CENTER WHOLE BOTTOM SECTION */
+.houses-center-section {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 30px 20px 60px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* TOP TEXT BOX - DIFFERENT STYLE */
+.houses-heading-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 55px;
+}
+
+.houses-intro {
+  max-width: 820px;
+  width: 100%;
+  margin: 0 auto;
+
+  padding: 22px 34px;
+  border-radius: 24px;
+
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  color: #f8f5ff;
+
+  background: linear-gradient(
+    135deg,
+    rgba(20, 18, 52, 0.92),
+    rgba(58, 45, 110, 0.78)
+  );
+
+  border: 1px solid rgba(255, 255, 255, 0.16);
+
+  box-shadow:
+    0 0 25px rgba(123, 77, 255, 0.20),
+    0 10px 35px rgba(0, 0, 0, 0.35);
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  position: relative;
+  overflow: hidden;
+}
+
+.houses-intro::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -30%;
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.08),
+    transparent
+  );
+  transform: skewX(-25deg);
+}
+
+.houses-intro span {
+  display: inline-block;
+  color: #ffd700;
+  text-shadow: 0 0 12px rgba(255, 215, 0, 0.45);
+}
+
+.houses-intro small {
+  display: block;
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #cfd7ff;
+  text-transform: uppercase;
+}
+
+/* FORCE HOUSES SECTION TO CENTER */
+.houses-wrapper,
+.houses-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* MAIN LAYOUT */
+.houses-content {
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 320px 360px;
+  justify-content: center;
+  align-items: center;
+  column-gap: 80px;
+}
+
+/* LEFT HOUSE GRID */
+.houses-left {
+  display: grid;
+  grid-template-columns: repeat(2, 150px);
+  gap: 28px;
+  justify-content: center;
+}
+
+/* HOUSE CARD */
+.house-card {
+  width: 150px;
+  min-height: 190px;
+  padding: 16px 12px;
+  border-radius: 22px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.22);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+}
+
+.house-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 14px;
+  background: transparent;
+}
+
+.house-card p {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.house-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 0 24px rgba(123, 77, 255, 0.45);
+}
+
+/* ACTIVE HOUSE */
+.house-card.active {
+  border: 1px solid #7b4dff;
+  box-shadow:
+    0 0 28px rgba(123, 77, 255, 0.55),
+    0 0 55px rgba(123, 77, 255, 0.18);
+  transform: translateY(-4px);
+}
+
+/* RIGHT EVENTS PANEL */
+.houses-right {
+  width: 100%;
+  max-width: 360px;
+  text-align: left;
+}
+
+.houses-right h3 {
+  margin: 0 0 20px;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #58a6ff;
+  text-shadow: 0 0 15px rgba(88, 166, 255, 0.2);
+}
+
+.houses-right ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.houses-right li {
+  padding: 16px 18px;
+  margin-bottom: 14px;
+  border-radius: 14px;
+
+  background: rgba(255, 255, 255, 0.06);
+  border-left: 4px solid #7b4dff;
+  color: #ffffff;
+  font-size: 1.45rem;
+  font-weight: 500;
+
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.16);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.houses-right li:hover {
+  transform: translateX(8px);
+  background: rgba(123, 77, 255, 0.16);
+}
+
+/* TABLET */
+@media (max-width: 1024px) {
+  .houses-content {
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+    justify-items: center;
+  }
+
+  .houses-right {
+    text-align: center;
+  }
+
+  .houses-right li {
+    text-align: left;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .houses-center-section {
+    padding: 25px 14px 40px;
+  }
+
+  .houses-heading-box {
+    margin-bottom: 30px;
+  }
+
+  .houses-intro {
+    max-width: 95%;
+    padding: 18px 18px;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    border-radius: 18px;
+  }
+
+  .houses-intro small {
+    font-size: 0.8rem;
+    margin-top: 8px;
+    letter-spacing: 0.8px;
+  }
+
+  .houses-content {
+    grid-template-columns: 1fr;
+    row-gap: 28px;
+    max-width: 100%;
+  }
+
+  .houses-left {
+    grid-template-columns: repeat(2, 120px);
+    gap: 18px;
+  }
+
+  .house-card {
+    width: 120px;
+    min-height: 150px;
+    padding: 12px 8px;
+  }
+
+  .house-card img {
+    width: 72px;
+    height: 72px;
+    margin-bottom: 10px;
+  }
+
+  .house-card p {
+    font-size: 0.95rem;
+  }
+
+  .houses-right {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .houses-right h3 {
+    font-size: 1.5rem;
+  }
+
+  .houses-right li {
+    font-size: 1rem;
+    padding: 13px 14px;
+    text-align: center;
+  }
+}
 /* ================= END ================= */

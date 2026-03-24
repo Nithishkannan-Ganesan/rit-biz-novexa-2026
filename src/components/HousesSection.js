@@ -10,25 +10,25 @@ const houses = [
     name: "Gryffindor",
     img: gryffindor,
     color: "#ff4d4d",
-    events: ["Coding", "Quiz"]
+    events: ["SpellCraft Coding(Coding)", "Wizarding Premier Auction(IPL auction)", "Forbidden Arena(Esports)"]
   },
   {
     name: "Ravenclaw",
     img: ravenclaw,
     color: "#4da6ff",
-    events: ["Paper Presentation", "Debate"]
+    events: ["Heist Protocol(CTF)", "Wizard's Quiz Bowl(Quiz)"]
   },
   {
     name: "Hufflepuff",
     img: hufflepuff,
     color: "#ffd11a",
-    events: ["IPL Auction", "Marketing"]
+    events: ["Stranger Minds(Paper Presentation)", "Cook the Code(Hackathon)"]
   },
   {
     name: "Slytherin",
     img: slytherin,
     color: "#33cc99",
-    events: ["Web Design", "Esports"]
+    events: ["Slytherin WebForge(Web Design)", "Throne of Crowns(Debate)"]
   }
 ];
 
@@ -38,9 +38,17 @@ export default function HousesSection() {
   return (
     <div className="houses-wrapper">
 
-      <h2 className="houses-title">
-        Each house conduct two events( one technical and one non-technical event)
-      </h2>
+      <div className="about-bottom houses-center-section">
+  <div className="houses-heading-box">
+    <p className="houses-intro">
+      Each house unveils <span>two signature events</span>
+      <small> one technical and one non-technical experience</small>
+      <small><span>Click on the houses to view events conducted by respective houses</span></small>
+    </p>
+  </div>
+
+  
+</div>
 
       <div className="houses-content">
 

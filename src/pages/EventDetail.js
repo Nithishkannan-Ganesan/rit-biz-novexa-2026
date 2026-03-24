@@ -20,14 +20,14 @@ const eventData = {
       }],
     teamSize: "1 - 3 members",
     coordinators: ["Ramya K, Nithish Kannan G"],
-    faculty: "M Rama Krishnan",
+    faculty: "Mr. M Rama Krishnan",
     contact: "8220396695",
     prize: ["Shield(Team) + Certificate", "Shield(Team) + Certificate", "Participation certificates"],
     doc: "/docs/paper.pdf"
   },
 
   coding: {
-    title: "SpellCraft Coding",
+    title: "SpellCraft Coding (Coding Event)",
     time: "11:00 AM - 1:00 PM",
     location: "Business Analytics Lab",
     about: [
@@ -38,7 +38,7 @@ const eventData = {
     ],
     teamSize: "1 - 3 members",
     coordinators: ["Santhosh G, SivaPriya"],
-    faculty: "M Jeya Sundari",
+    faculty: "Mrs. M Jeya Sundari",
     contact: "9489707669",
     prize: ["Cash Prize + Certificate", "Cash Prize + Certificate", "Participation Certificates"],
     doc: "/docs/coding.pdf"
@@ -58,9 +58,9 @@ const eventData = {
     },
   ],
 
-  teamSize: "Individual / Team of 2",
+  teamSize: "1 - 3 members",
   coordinators: ["Thanalakshmi G, Pradeep K"],
-  faculty: "M Shabana Fathima",
+  faculty: "Mrs. M Shabana Fathima",
   contact: "9345395524",
   prize: ["Shield(Team) + Certificate", "Shield(Team) + Certificate", "Participation certificates"],
   doc: "/docs/web.pdf"
@@ -82,7 +82,7 @@ const eventData = {
 
   teamSize: "1 - 3 members",
   coordinators: ["Kathirvel G, Kaviya N"],
-  faculty: "M Preethi Ram",
+  faculty: "Mrs. M Preethi Ram",
   contact: "9344973243",
   prize: ["Shield(Team) + Certificate", "Shield(Team) + Certificate", "Participation certificates"],
   doc: "/docs/ctf.pdf"
@@ -94,19 +94,8 @@ const eventData = {
     location: "Class Room",
     about: [
   {
-    title: "Round 1 (Online Qualifier - Battle Royale)",
-    desc: `• Battle Royale format conducted online
-• All registered teams will participate
-• Top 6 teams will be shortlisted
-• Selection based on performance and survival`
-  },
-  {
-    title: "Round 2 (Offline Finals - Clash Squad)",
-    desc: `• Selected teams will compete live
-• Fixtures will be created for matchups
-• Teams will battle against each other
-• Gameplay will test coordination and strategy
-• One team will be crowned as the winner`
+    title: "NOTE : LAST DATE FOR REGISTRATION IS 01-04-2026",
+    desc: "The event consists of two exciting rounds. Round 1 is an online Battle Royale qualifier where all registered teams compete, and the top 6 teams are selected based on their performance and survival. Round 2 is the offline Clash Squad finals, where the shortlisted teams face live matchups that test their coordination, strategy, and teamwork to determine the ultimate winner."
   }
 ],
     teamSize: "Team Event",
@@ -115,7 +104,7 @@ const eventData = {
       
     ],
     contact: "8220315775",
-    faculty: "Ereena Veerappa Dinesh",
+    faculty: "Mr. Ereena Veerappa Dinesh",
     prize: ["₹2500 Cash Prize + Certificate", "₹1500 Cash Prize + Certificate", "Participation Certificate(Hard copy for 3 - 6 rankings and E-certificate for other participants)"],
     doc: "/docs/esports.pdf"
   },
@@ -135,7 +124,7 @@ const eventData = {
     "Vaishnavi V, Rajakaleeswaran S",
   ],
   contact: "9385538055",
-  faculty: "M Preethi Ram",
+  faculty: "Mrs. M Preethi Ram",
   prize: ["Shield(Team) + Certificate", "Shield(Team) + Certificate", "Participation certificates"],
   doc: "/docs/debate.pdf"
 },
@@ -158,13 +147,13 @@ const eventData = {
     "Raja Pandiyan P, Mufrin Ashika O J",
   ],
   contact: "9043515452",
-  faculty: "M Jeya Sundari",
+  faculty: "Mrs. M Jeya Sundari",
   prize: ["Shield(Team) + Certificate", "Shield(Team) + Certificate", "Participation certificates"],
-  doc: "/docs/aution.pdf"
+  doc: "/docs/auction.pdf"
 },
 
   quiz: {
-  title: "Wizard's Quiz Bowl",
+  title: "Wizard's Quiz Bowl(Quiz Event)",
   time: "2:00 PM - 3:00 PM",
   location: "Business Analytics Lab",
   about: [
@@ -178,7 +167,7 @@ const eventData = {
     "Kaavyadharshini, Bala Vignesh S",
   ],
   contact: "8903590156",
-  faculty: "M Rekha",
+  faculty: "Mrs. M Rekha",
   prize: ["Shield(Team) + Certificate", "Shield(Team) + Certificate", "Participation certificates"],
   doc: "/docs/quiz.pdf"
 }

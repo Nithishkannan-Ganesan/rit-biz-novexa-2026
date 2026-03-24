@@ -6,7 +6,7 @@ import bgImage from "../assets/images/hogwart-bg.webp";
 import clgLogo from "../assets/images/Ramco-logo.jpg";
 import aboutbg from "../assets/images/about-section-bg.png";
 import bannerBg from "../assets/images/banner-bg.png";
-import poster from "../assets/images/poster.jpeg";
+import poster from "../assets/images/poster.png";
 import HousesSection from "../components/HousesSection";
 
 
@@ -141,7 +141,7 @@ export default function Home() {
   <br />
 
   <span className="deadline">
-     Last Date to recieve Invitation : <b>Coming Soon</b>
+     Last Date to receive Invitation : <b>9th April 2026</b>
   </span>
 </p>
 
@@ -150,7 +150,7 @@ export default function Home() {
             download="poster.jpeg"
             className="hero-btn"
           >
-            VIEW POSTER
+            VIEW SCROLL
           </a>
 
         </div>

@@ -10,6 +10,7 @@ import hackPoster from "../assets/images/hackposter.jpeg";
 
 export default function Hackathon() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const hackathonDoc = "/docs/hackathon.pdf"
 
   return (
     <div className="hp-container fade-in">
@@ -124,6 +125,18 @@ export default function Hackathon() {
               • Use of pre-built projects is strictly not allowed
               • Open-source libraries and APIs can be used`}
               </p>
+              {/* VIEW DOC + SCROLL */}
+<div className="hack-doc-section">
+
+  <button
+    className="view-doc-btn"
+    onClick={() => window.open(hackathonDoc, "_blank")}
+  >
+    📜 OPEN RULEBOOK
+  </button>
+
+
+</div>
           </div>
 
           {/* DETAILS */}
