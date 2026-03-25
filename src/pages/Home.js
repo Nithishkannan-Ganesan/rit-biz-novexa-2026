@@ -150,7 +150,7 @@ export default function Home() {
             download="poster.jpeg"
             className="hero-btn"
           >
-            VIEW SCROLL
+            DOWNLOAD SCROLL
           </a>
 
         </div>
