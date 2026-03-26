@@ -33,12 +33,12 @@ const eventData = {
     about: [
       {
         title: "",
-        desc: "This is a coding competition conducted through a dedicated website platform.The event tests participants' programming knowledge, debugging skills, and problem-solving ability.Participants will complete all rounds on the website within the given time limits."
+        desc: "This is a coding competition conducted through a dedicated website platform.The event tests participants' programming knowledge, debugging skills, and problem-solving ability.Participants will complete all rounds on the website within the given time limits.Single team member will be allowed to participate in each round."
       }
     ],
     teamSize: "1 - 3 members",
     coordinators: ["Santhosh G, SivaPriya"],
-    faculty: "Mrs. M Jeya Sundari",
+    faculty: "Dr. M Jeya Sundari",
     contact: "9489707669",
     prize: ["Cash Prize + Certificate", "Cash Prize + Certificate", "Participation Certificates"],
     doc: "/docs/coding.pdf"
@@ -82,7 +82,7 @@ const eventData = {
 
   teamSize: "1 - 3 members",
   coordinators: ["Kathirvel G, Kaviya N"],
-  faculty: "Mrs. M Preethi Ram",
+  faculty: "Ms. M Preethi Ram",
   contact: "9344973243",
   prize: ["Shield(Team) + Certificate", "Shield(Team) + Certificate", "Participation certificates"],
   doc: "/docs/ctf.pdf"
@@ -104,7 +104,7 @@ const eventData = {
       
     ],
     contact: "8220315775",
-    faculty: "Mr. Ereena Veerappa Dinesh",
+    faculty: "Dr. Ereena Veerappa Dinesh",
     prize: ["₹2500 Cash Prize + Certificate", "₹1500 Cash Prize + Certificate", "Participation Certificate(Hard copy for 3 - 6 rankings and E-certificate for other participants)"],
     doc: "/docs/esports.pdf"
   },
@@ -124,7 +124,7 @@ const eventData = {
     "Vaishnavi V, Rajakaleeswaran S",
   ],
   contact: "9385538055",
-  faculty: "Mrs. M Preethi Ram",
+  faculty: "Ms. M Preethi Ram",
   prize: ["Shield(Team) + Certificate", "Shield(Team) + Certificate", "Participation certificates"],
   doc: "/docs/debate.pdf"
 },
@@ -147,7 +147,7 @@ const eventData = {
     "Raja Pandiyan P, Mufrin Ashika O J",
   ],
   contact: "9043515452",
-  faculty: "Mrs. M Jeya Sundari",
+  faculty: "Dr. M Jeya Sundari",
   prize: ["Shield(Team) + Certificate", "Shield(Team) + Certificate", "Participation certificates"],
   doc: "/docs/auction.pdf"
 },
