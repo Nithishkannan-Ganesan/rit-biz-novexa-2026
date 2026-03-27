@@ -145,7 +145,7 @@ export default function Hackathon() {
             <div className="event-card-box half">
               <h2>Event Details</h2>
               <p><b>Date :</b> 10th April 2026</p>
-              <p><b>Time :</b> 11:00 AM - 1:00 PM</p>
+              <p><b>Time :</b> 11:00 AM - 3:00 PM</p>
               <p><b>Location :</b> IT Lab</p>
               <p><b>Team Size :</b> 1 - 3 members</p>
             </div>
