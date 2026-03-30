@@ -10,7 +10,7 @@ import hackPoster from "../assets/images/hackposter.jpeg";
 
 export default function Hackathon() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const hackathonDoc = "/docs/hackathon.pdf"
+  const hackathonDoc = "/docs/hackathon.docx"
 
   return (
     <div className="hp-container fade-in">
