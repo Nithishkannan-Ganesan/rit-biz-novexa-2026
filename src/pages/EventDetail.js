@@ -18,7 +18,7 @@ const eventData = {
         title: "",
         desc: "Stranger Minds is a technical paper presentation event designed to evaluate participants’ knowledge, research ability, presentation skills, and innovation in emerging technologies. Participants can choose any one topic from the given list of 10 topics, prepare a presentation, and present it on the day of the symposium."
       }],
-    teamSize: "1 - 3 members",
+    teamSize: "1 - 4 members",
     coordinators: ["Ramya K, Nithish Kannan G"],
     faculty: "Mr. M Rama Krishnan",
     contact: "8220396695",
